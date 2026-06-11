@@ -1,0 +1,10 @@
+project_id,opportunity_id,fit_score,fit_rationale_public_safe,expected_difficulty,submission_probability,strategic_value,publication_value,effort_required,cost_burden,priority,risk_tags,next_action_public_safe,internal_deadline,owner_initials,status,notes_public_safe
+P01,OPP011,5,Human-AI interaction venue; experiment-based user studies are core scope.,high,3,5,5,4,3,,deadline_not_announced,watch IUI 2027 CFP (deadlines TBD),2026-09-15,GHL,candidate,
+P01,OPP001,5,Top general HCI venue; experimental human-AI work fits papers track.,high,2,5,5,5,3,,competitive_venue;formatting_needed,draft outline before 2026-08; verify word limit,2026-08-20,GHL,candidate,
+P01,OPP031,4,Special issue on hybrid human-AI systems matches broad field; journal pace fits writing stage.,medium,3,4,4,3,2,,deadline_unknown,verify SI deadline on IwC page,2026-07-01,GHL,candidate,
+P02,OPP012,5,Mobile HCI venue; applied mobile service UX with survey/interview methods is a direct fit; LBW suits industry case.,low,4,5,3,2,2,,deadline_tight;deadline_not_announced,check LBW deadline immediately (TBD ~June),2026-06-12,GHL,candidate,
+P02,OPP035,4,Fintech topical collection in IS journal; UX study framed as digital-finance research.,medium,3,4,4,3,2,,framing_needed,draft IS-style framing; check author guidelines,2026-08-01,GHL,candidate,
+P02,OPP038,4,Journal scope explicitly covers mobile/online banking; survey/interview methods accepted.,medium,4,4,3,3,2,,framing_needed,check author guidelines; draft abstract,2026-09-01,GHL,candidate,
+P02,OPP001,4,General HCI venue accepts applied mobile UX; needs stronger theoretical framing.,high,2,4,5,5,3,,framing_needed;competitive_venue,decide by 2026-08 whether to target CHI vs journal,2026-08-10,GHL,candidate,
+P03,OPP008,4,Accessibility venue; poster suits ongoing field study (data still collecting).,low,3,4,2,2,2,,deadline_tight;needs_more_analysis,check poster format; draft 2p abstract,2026-06-25,GHL,candidate,
+P03,OPP014,3,General HCI LBW track; accessibility field study fits as adjacent topic.,low,3,3,2,2,3,,travel_cost,verify LBW page limit,2026-07-20,GHL,candidate,

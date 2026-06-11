@@ -1,0 +1,19 @@
+watch_id,venue_id,expected_cycle,expected_submission_month,last_year_cfp_url,current_year_homepage_url,current_status,last_checked_at,next_check_date,notes
+W001,V006,annual,2026-06,https://mobilehci.acm.org/2026/submit/lbw-posters.html,https://mobilehci.acm.org/2026/,CFP released,2026-06-10,2026-06-12,LBW 마감 TBD ~June 2026 — 즉시 재확인 필요. 모바일 UX 1순위 트랙.
+W002,V001,annual,2026-11,https://chi2027.acm.org/authors/posters/,https://chi2027.acm.org/,CFP not released,2026-06-10,2026-09-15,CHI 2027 LBW/Posters/Demos/Workshops 마감 미공개(예년: 11월~1월).
+W003,V003,annual,2027-01,https://dis.acm.org/2026/,,CFP not released,2026-06-10,2026-10-01,DIS 2027 사이트 미개설(dis.acm.org/2027 예상). 예년 abstract ~1월 초.
+W004,V012,annual,2027-02,https://cui.acm.org/2026/,,CFP not released,2026-06-10,2026-11-01,CUI 2027 미발표. 예년 full paper ~2월 말/3월 초.
+W005,V011,annual,2026-10,https://2026.hci.international/submissions.html,https://www.hci.international/,CFP not released,2026-06-10,2026-08-01,HCII 2027은 2026 학회(7월 말) 이후 발표 예상. Helsinki 설은 2차 출처 — 미확인.
+W006,V014,annual,2027-01,https://facctconference.org/2026/cfp.html,,CFP not released,2026-06-10,2026-10-15,"FAccT 2027 Porto, 2027-06-21~24 설은 검색결과 기반 — 공식 페이지 미확인. 예년 마감 ~1월 중순."
+W007,V015,annual,2026-07,https://www.humancomputation.com/2026/submit.html,https://www.humancomputation.com/2026/,CFP released,2026-06-10,2026-06-20,Posters/Demos·DC·CrowdCamp 마감 Coming soon.
+W008,V005,annual,2026-10,https://iui.acm.org/2027/call-for-papers/,https://iui.acm.org/2027/,CFP released,2026-06-10,2026-08-01,마감일 Coming soon — 8월 재확인.
+W009,V026,annual,2026-09,,https://ieeevr.org/2027/,CFP not released,2026-06-10,2026-08-15,"예년 abstract ~9월, paper ~10월."
+W010,V019,annual,2026-06,https://icis2026.aisconferences.org/submissions/call-for-papers/,https://icis2026.aisconferences.org/,deadline announced,2026-06-10,2026-06-30,본 논문 마감(5/1). TREO talk 마감 미공개 — 재확인. Ancillary CFP: https://icis2026.aisconferences.org/events/ancillary-meetings-and-call-for-papers/
+W011,V013,annual,2026-07,https://recsys.acm.org/recsys26/workshops/,https://recsys.acm.org/recsys26/,CFP released,2026-06-10,2026-06-20,개별 워크숍 paper CFP 여름 진행 — 워크숍별 마감 확인.
+W012,V016,annual,2026-07,https://www.ubicomp.org/ubicomp-iswc-2026/workshops-and-tutorials-2026/,https://www.ubicomp.org/ubicomp-iswc-2026/,CFP released,2026-06-10,2026-06-20,본 트랙 마감. 개별 워크숍 paper 마감 ~6-7월 — 워크숍별 확인.
+W013,V002,annual,2026-06,https://cscw.acm.org/2026/demos.html,https://cscw.acm.org/2026/,unknown,2026-06-10,2026-06-15,CSCW 2026 Demos/Workshops/Panels 마감 미확인 — 페이지 확인 필요.
+W014,V020,annual,2026-11,,,unknown,2026-06-10,2026-09-01,ECIS 2027 사이트 미확인.
+W015,V021,annual,2026-12,,,unknown,2026-06-10,2026-12-01,PACIS 2027 사이트 미확인.
+W016,V022,annual,2027-02,,,unknown,2026-06-10,2026-12-01,AMCIS 2027 사이트 미확인.
+W017,V027,annual,2027-03,,,unknown,2026-06-10,2026-12-01,IVA 2027 사이트 미확인. project_specific_only.
+W018,V009,biennial-pattern-check,2028-04,https://sites.uwasa.fi/nordichi2026/nordichi-2026/submit/,https://sites.uwasa.fi/nordichi2026/,closed,2026-06-10,2026-07-01,NordiCHI 2026 전 트랙 마감. 차기 회차 추적. 채택된 워크숍의 paper 모집은 별도로 열릴 수 있음 — 7월 확인.

@@ -1,0 +1,16 @@
+fee_id,opportunity_id,venue_id,fee_type,category,amount,currency,fee_deadline,fee_source_url,source_id,last_checked_at,verification_status,notes
+F001,OPP003,V002,registration,regular,,,,https://cscw.acm.org/2026/registration.html,S078,2026-06-10,needs_verification,금액 미기록 — 등록 페이지에서 확인 필요.
+F002,OPP020,V018,registration,regular,,,,https://hicss.hawaii.edu/registration/,S079,2026-06-10,needs_verification,금액 미기록.
+F003,,V019,registration,regular,,,,https://icis2026.aisconferences.org/registration-visa/,S080,2026-06-10,needs_verification,금액 미기록.
+F004,,V009,registration,regular,,,,https://sites.uwasa.fi/nordichi2026/nordichi-2026/registration/,S081,2026-06-10,needs_verification,금액 미기록.
+F005,,V014,registration,regular,,,,https://facctconference.org/2026/registration.html,S082,2026-06-10,needs_verification,금액 미기록.
+F006,,V011,registration,regular,,,,https://2026.hci.international/registration.html,S083,2026-06-10,needs_verification,HCII 2026 기준 — 2027 회차는 별도 확인.
+F007,,V038,APC,regular,4690,USD,,https://www.sciencedirect.com/journal/design-studies/about/insights,S053,2026-06-10,verified_official,ex-tax. 검색 스니펫 기반 — 게재 전 재확인 권장.
+F008,,V043,APC,regular,3900,USD,,https://www.sciencedirect.com/journal/decision-support-systems/about/insights,S061,2026-06-10,verified_official,ex-tax. 재확인 권장.
+F009,,V046,APC,regular,0,USD,,https://link.springer.com/journal/40854,S066,2026-06-10,verified_official,SWUFE 후원으로 2026년부터 연 110편까지 APC 면제(저널 홈페이지 명시). 쿼터 소진 여부 확인 필요.
+F010,,V032,APC,regular,,,,https://www.sciencedirect.com/journal/international-journal-of-human-computer-studies/about/insights,S043,2026-06-10,needs_verification,insights 페이지에 APC 표기 있음 — 금액 미기록.
+F011,,V037,APC,regular,,,,https://link.springer.com/journal/779/how-to-publish-with-us#Fees%20and%20funding,S051,2026-06-10,needs_verification,금액 미기록.
+F012,,V041,APC,regular,,,,https://link.springer.com/journal/10796/how-to-publish-with-us#Fees%20and%20funding,S057,2026-06-10,needs_verification,hybrid OA — OA 선택 시만 해당.
+F013,,V044,APC,regular,,,,https://link.springer.com/journal/12525/how-to-publish-with-us#Fees%20and%20funding,S063,2026-06-10,needs_verification,hybrid OA.
+F014,,V048,APC,regular,,,,https://link.springer.com/journal/41264/how-to-publish-with-us#Fees%20and%20funding,S069,2026-06-10,needs_verification,hybrid OA.
+F015,,V036,APC,regular,,,,https://academic.oup.com/iwc/pages/General_Instructions#Open%20access,S049,2026-06-10,needs_verification,hybrid (Read & Publish 계약 있음).

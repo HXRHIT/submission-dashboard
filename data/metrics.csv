@@ -1,0 +1,30 @@
+metric_id,venue_id,metric_year,sci_status,scie_status,ssci_status,ahci_status,scopus_status,impact_factor,cite_score,core_ranking,h5_index,acceptance_rate,metric_source_url,metric_source_type,source_id,last_checked_at,verification_status,notes
+M001,V036,2024,,,,,,1.3,,,,,https://academic.oup.com/iwc,publisher page,S047,2026-06-10,verified_official,"2024 JIF 1.3, 5yr 1.9 — 홈페이지 표시."
+M002,V041,2024,,,,,,8.3,,,,,https://link.springer.com/journal/10796,publisher page,S056,2026-06-10,verified_official,"2024 JIF 8.3, 5yr 7.8 — 홈페이지 표시."
+M003,V041,2025,,,,,indexed,,26.4,,,,https://link.springer.com/journal/10796,publisher page,S056,2026-06-10,verified_official,"CiteScore 26.4 (2025), Scopus indexed 명시."
+M004,V044,2024,,,,,,6.8,,,,,https://link.springer.com/journal/12525,publisher page,S062,2026-06-10,verified_official,"2024 JIF 6.8, 5yr 10.0."
+M005,V046,2024,,,,,,7.2,,,,,https://link.springer.com/journal/40854,publisher page,S066,2026-06-10,verified_official,"2024 JIF 7.2, 5yr 7.5."
+M006,V048,2024,,,,,,4.3,,,,,https://link.springer.com/journal/41264,publisher page,S068,2026-06-10,verified_official,"2024 JIF 4.3, 5yr 4.1."
+M007,V032,,,,,,,,,,,,https://www.sciencedirect.com/journal/international-journal-of-human-computer-studies/about/insights,publisher page,S043,2026-06-10,needs_verification,IF 5.1 / CiteScore 12.4 표시(2026-06-10). 값은 비워둠(정책): 기준연도 라벨 미확인 — 연도 확인 후 입력.
+M008,V038,,,,,,,,,,,,https://www.sciencedirect.com/journal/design-studies/about/insights,publisher page,S053,2026-06-10,needs_verification,IF 4.8 / CS 10.5 표시. 기준연도 라벨 미확인 — 연도 확인 후 입력.
+M009,V042,,,,,,,,,,,,https://www.sciencedirect.com/journal/information-and-management/about/insights,publisher page,S058,2026-06-10,needs_verification,IF 8.2 / CS 17.5 표시. 기준연도 라벨 미확인 — 연도 확인 후 입력.
+M010,V043,,,,,,,,,,,,https://www.sciencedirect.com/journal/decision-support-systems/about/insights,publisher page,S061,2026-06-10,needs_verification,IF 6.8 / CS 13.5 표시. 기준연도 라벨 미확인 — 연도 확인 후 입력.
+M011,V045,,,,,,,,,,,,https://www.sciencedirect.com/journal/electronic-commerce-research-and-applications/about/insights,publisher page,S065,2026-06-10,needs_verification,IF 5.9 / CS 10.1 표시. 기준연도 라벨 미확인 — 연도 확인 후 입력.
+M012,V049,,,,,,,,,,,,https://www.sciencedirect.com/journal/journal-of-retailing-and-consumer-services/about/insights,publisher page,S070,2026-06-10,needs_verification,IF 13.1 / CS 22.7 표시. 기준연도 라벨 미확인 — 연도 확인 후 입력.
+M013,V050,,,,,,,,,,,,https://www.sciencedirect.com/journal/technological-forecasting-and-social-change/about/insights,publisher page,S073,2026-06-10,needs_verification,IF 13.3 / CS 26.3 표시. 기준연도 라벨 미확인 — 연도 확인 후 입력.
+M014,V051,,,,,,,,,,,,https://us.sagepub.com/en-us/nam/journal/journal-service-research,publisher page,S074,2026-06-10,needs_verification,IF 8.6 / 5yr 11.6 표시(연도 라벨 미확인). 연도 확인 후 입력.
+M015,V030,,,,,,,,,,,,,,,2026-06-10,needs_verification,퍼블리셔 페이지에서 지표 확인 불가 — JCR/Scopus/CORE 포털에서 확인 후 입력.
+M016,V031,,,,,,,,,,,,,,,2026-06-10,needs_verification,퍼블리셔 페이지에서 지표 확인 불가 — JCR/Scopus에서 확인 후 입력.
+M017,V033,,,,,,,,,,,,,,,2026-06-10,needs_verification,T&F 페이지 JS 렌더링으로 지표 미확인 — JCR/Scopus에서 확인 후 입력.
+M018,V034,,,,,,,,,,,,,,,2026-06-10,needs_verification,T&F 페이지에서 지표 미확인 — JCR/Scopus에서 확인 후 입력.
+M019,V035,,,,,,,,,,,,,,,2026-06-10,needs_verification,T&F 페이지에서 지표 미확인(2019년 IF 1.781은 구버전 — 사용 금지). JCR/Scopus 확인 필요.
+M020,V037,,,,,,,,,,,,,,,2026-06-10,needs_verification,퍼블리셔 홈페이지에 IF/CiteScore 미표시 — JCR/Scopus 확인 필요.
+M021,V039,,,,,,,,,,,,,,,2026-06-10,needs_verification,지표 미확인 — JCR/Scopus 확인 필요.
+M022,V040,,,,,,,,,,,,,,,2026-06-10,needs_verification,지표 미확인 — JCR/Scopus 확인 필요.
+M023,V047,,,,,,,,,,,,,,,2026-06-10,needs_verification,Emerald 페이지에서 지표 미확인 — JCR/Scopus 확인 필요.
+M024,V052,,,,,,,,,,,,,,,2026-06-10,needs_verification,지표 미확인 — Google Scholar h5/Scopus 확인 필요.
+M025,V001,,,,,,,,,,,,,,,2026-06-10,needs_verification,CORE ranking/acceptance rate 미입력 — CORE 포털(portal.core.edu.au) 및 공식 proceedings frontmatter에서 확인 후 입력.
+M026,V002,,,,,,,,,,,,,,,2026-06-10,needs_verification,CORE ranking/acceptance rate 미입력 — CORE 포털 확인 후 입력.
+M027,V005,,,,,,,,,,,,,,,2026-06-10,needs_verification,CORE ranking/acceptance rate 미입력 — CORE 포털 확인 후 입력.
+M028,V006,,,,,,,,,,,,,,,2026-06-10,needs_verification,CORE ranking/acceptance rate 미입력 — CORE 포털 확인 후 입력.
+M029,V013,,,,,,,,,,,,,,,2026-06-10,needs_verification,CORE ranking/acceptance rate 미입력 — CORE 포털 확인 후 입력.
