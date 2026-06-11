@@ -132,7 +132,7 @@ st.caption(
 )
 
 tabs = st.tabs(["🗓 투고 캘린더", "📊 후보 비교표", "🎯 프로젝트 Fit", "🔍 URL 검증",
-                "💰 비용 비교", "📈 수준 지표", "👀 Watchlist"])
+                "💰 비용 비교", "📈 수준 지표", "👀 Watchlist", "🤖 AI 제안 검토"])
 
 # ---------------------------------------------------------------- 1. calendar
 with tabs[0]:
@@ -268,21 +268,22 @@ with tabs[2]:
     fv = fits.copy()
     if pid != "(전체)":
         fv = fv[fv["project_id"] == pid]
-    fv = fv.merge(
-        ov[["opportunity_id", "acronym", "track_name", "paper_deadline", "status",
-            "official_cfp_url"]],
-        on="opportunity_id", how="left",
-    ).fillna("")
+    ctx = ov[["opportunity_id", "acronym", "track_name", "paper_deadline", "status",
+              "official_cfp_url"]].rename(columns={"status": "opp_status"})
+    fv = fv.merge(ctx, on="opportunity_id", how="left").fillna("")
     fv["D-day"] = fv["paper_deadline"].map(dday_label)
 
-    num_cols = ["fit_score", "submission_probability", "strategic_value",
-                "publication_value", "effort_required", "cost_burden"]
+    FIT_SCHEMA = list(fits.columns)          # 원본 스키마 (저장용 export 기준)
+    CONTEXT_COLS = ["acronym", "track_name", "paper_deadline", "D-day", "opp_status",
+                    "official_cfp_url"]      # 표시 전용 — export에서 제외
+    SCORE_COLS = ["fit_score", "submission_probability", "strategic_value",
+                  "publication_value", "effort_required", "cost_burden"]
 
     def calc_priority(df):
         out = []
         for _, r in df.iterrows():
             try:
-                vals = {c: float(r[c]) for c in num_cols if str(r[c]).strip() != ""}
+                vals = {c: float(r[c]) for c in SCORE_COLS if str(r[c]).strip() != ""}
                 score = (vals.get("fit_score", 0) * w["fit_score"]
                          + vals.get("strategic_value", 0) * w["strategic_value"]
                          + vals.get("submission_probability", 0) * w["submission_probability"]
@@ -294,29 +295,34 @@ with tabs[2]:
                 out.append(None)
         return out
 
-    fv["priority"] = calc_priority(fv)
-    show = ["project_id", "acronym", "track_name", "paper_deadline", "D-day", "status_y",
-            "fit_score", "fit_rationale_public_safe", "expected_difficulty",
-            "submission_probability", "strategic_value", "publication_value",
-            "effort_required", "cost_burden", "priority", "risk_tags",
-            "next_action_public_safe", "internal_deadline", "status_x", "official_cfp_url"]
-    show = [c for c in show if c in fv.columns]
+    editor_cols = CONTEXT_COLS + [c for c in FIT_SCHEMA if c != "priority"]
     edited = st.data_editor(
-        fv[show].sort_values("priority", ascending=False),
-        use_container_width=True, hide_index=True, num_rows="dynamic",
+        fv[editor_cols], use_container_width=True, hide_index=True, num_rows="dynamic",
+        disabled=CONTEXT_COLS,
         column_config={"official_cfp_url": LINK_COLS["official_cfp_url"]},
         key="fit_editor",
-    )
-    st.caption("status_x = fit 진행 상태, status_y = 트랙 모집 상태")
-    c1, c2 = st.columns(2)
-    if c1.button("priority 재계산"):
-        st.rerun()
-    csv_bytes = edited.to_csv(index=False).encode("utf-8-sig")
-    c2.download_button("수정본 CSV 다운로드", csv_bytes, "project_opportunity_fit_edited.csv",
-                       "text/csv")
+    ).fillna("")
+    st.caption("회색 컬럼은 표시 전용(저장 제외). 점수 컬럼은 1~5.")
+
+    # 편집된 값 기준으로 priority 확정 계산
+    edited["priority"] = calc_priority(edited)
+    rank = edited.assign(_p=pd.to_numeric(edited["priority"], errors="coerce")) \
+                 .sort_values("_p", ascending=False)
+    st.markdown("**계산된 Priority (편집 반영 — 저장되는 값)**")
+    st.dataframe(
+        rank[["project_id", "acronym", "track_name", "fit_score", "strategic_value",
+              "submission_probability", "publication_value", "effort_required",
+              "cost_burden", "priority"]],
+        use_container_width=True, hide_index=True)
+
+    out = edited[FIT_SCHEMA]                 # 원본 컬럼·순서 그대로 (priority 포함)
+    csv_bytes = out.to_csv(index=False).encode("utf-8-sig")
+    st.download_button("저장용 CSV 다운로드 (project_opportunity_fit.csv 스키마)",
+                       csv_bytes, "project_opportunity_fit.csv", "text/csv")
     st.info("⚠️ 웹 배포(Streamlit Cloud)에서는 편집 내용이 저장되지 않습니다. "
-            "수정본 CSV를 다운로드해 data/project_opportunity_fit.csv 컬럼 구조에 맞게 반영하고 "
-            "git commit/push 하세요 (docs/update_guide.md).")
+            "위 버튼으로 받은 파일을 data/project_opportunity_fit.csv에 그대로 덮어쓰고 "
+            "validate → git commit/push 하세요 (docs/update_guide.md). "
+            "단, 프로젝트 필터를 건 상태의 다운로드는 해당 프로젝트 행만 포함합니다.")
 
 # ---------------------------------------------------------------- 4. URL check
 with tabs[3]:
@@ -439,3 +445,64 @@ with tabs[6]:
                  column_config={k: v for k, v in LINK_COLS.items() if k in cols})
     due = int((wview["check_due"] != "").sum())
     st.metric("오늘 기준 확인이 필요한 항목", due)
+
+# ---------------------------------------------------------------- 8. AI proposals
+with tabs[7]:
+    st.subheader("AI 제안 검토 (proposed_updates)")
+    st.caption("AI가 만든 수정 초안은 master CSV를 직접 고치지 않고 "
+               "data/proposed_updates/<테이블명>.csv 로 둔다. 여기서 diff를 검토한 뒤 "
+               "로컬에서 scripts/apply_updates.py 로 병합한다 (검증 실패 시 자동 롤백).")
+    PU = DATA / "proposed_updates"
+    KEYS = {"venues": "venue_id", "opportunities": "opportunity_id", "fees": "fee_id",
+            "metrics": "metric_id", "sources": "source_id", "watchlist": "watch_id",
+            "projects": "project_id"}
+    MASTERS = {"venues": venues, "opportunities": opps, "fees": fees, "metrics": metrics,
+               "sources": sources, "watchlist": watch, "projects": projects,
+               "project_opportunity_fit": fits}
+
+    def row_key(row, table):
+        if table == "project_opportunity_fit":
+            return f"{row.get('project_id', '')}->{row.get('opportunity_id', '')}"
+        return row.get(KEYS[table], "")
+
+    patches = sorted(PU.glob("*.csv")) if PU.exists() else []
+    if not patches:
+        st.info("대기 중인 제안 파일이 없습니다 (data/proposed_updates/*.csv). "
+                "형식은 data/proposed_updates/README.md 참고.")
+    for p in patches:
+        table = p.stem
+        st.markdown(f"### 📄 {p.name}")
+        try:
+            prop = pd.read_csv(p, dtype=str, encoding="utf-8-sig").fillna("")
+        except Exception as e:  # noqa: BLE001
+            st.error(f"읽기 실패: {e}")
+            continue
+        master = MASTERS.get(table)
+        if master is None:
+            st.warning(f"알 수 없는 테이블명: {table} (파일명은 master CSV 이름과 같아야 함)")
+            continue
+        mk = {}
+        for _, mr in master.iterrows():
+            mk[row_key(mr, table)] = mr
+        rows = []
+        for _, r in prop.iterrows():
+            k = row_key(r, table)
+            old = mk.get(k)
+            if old is not None:
+                diffs = [f"{c}: '{old.get(c, '')}' -> '{r[c]}'"
+                         for c in prop.columns
+                         if c in master.columns and str(old.get(c, "")) != str(r[c])]
+                rows.append({"key": k, "change": "update",
+                             "diff": "; ".join(diffs) or "(변경 없음)",
+                             "ai_confidence": r.get("ai_confidence", ""),
+                             "change_note": r.get("change_note", "")})
+            else:
+                rows.append({"key": k, "change": "add", "diff": "(신규 행)",
+                             "ai_confidence": r.get("ai_confidence", ""),
+                             "change_note": r.get("change_note", "")})
+        st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
+        st.code(
+            f"python scripts/apply_updates.py --table {table} --apply              # 전체 반영\n"
+            f"python scripts/apply_updates.py --table {table} --apply --only KEY1,KEY2\n"
+            f"python scripts/apply_updates.py --table {table} --apply --drop KEY3",
+            language="bash")

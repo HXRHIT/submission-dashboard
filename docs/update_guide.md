@@ -22,6 +22,8 @@ git push
 ## 2. 주기별 체크리스트
 
 **매주 (10분)**
+- `python scripts/validate_data.py --weekly` → urgent 큐(마감 지난 open, watchlist 도래,
+  open인데 needs_verification)만 출력됨 — 이것만 처리
 - 대시보드 "URL 검증" 탭에서 ⑧(마감 지난 open) 정리 → status를 closed로
 - "Watchlist" 탭에서 `next_check_date` 도래 항목의 공식 페이지 방문 →
   CFP 떴으면 opportunities.csv에 행 추가, watchlist의 current_status/last_checked_at/next_check_date 갱신
@@ -42,6 +44,20 @@ git push
 2. `opportunities.csv`에 행 추가 — deadline_source_url 필수, 날짜 YYYY-MM-DD, 타임존 분리
 3. 필요 시 `fees.csv`/`metrics.csv` 행 추가
 4. `python scripts/validate_data.py` → ERROR 0 확인 → commit/push
+
+## 3b. AI 수정 파이프라인 (권장)
+
+AI에게 CFP 조사·갱신을 시킬 때는 master CSV를 직접 고치게 하지 말고:
+
+1. AI가 `data/proposed_updates/<테이블명>.csv` 초안 생성
+   (master 스키마 + `ai_confidence`, `change_note` — 형식: data/proposed_updates/README.md)
+2. 대시보드 "🤖 AI 제안 검토" 탭에서 행별 diff·출처·confidence 확인
+3. 로컬에서 병합 (자동 백업 → 자동 검증 → ERROR 시 자동 롤백):
+   ```bash
+   python scripts/apply_updates.py --list
+   python scripts/apply_updates.py --table opportunities --apply --only OPP041
+   ```
+4. commit/push
 
 ## 4. 캘린더 내보내기
 
@@ -70,6 +86,8 @@ python scripts/export_calendar.py --status open
 ## 7. 주의
 
 - 웹 앱에서의 fit 테이블 편집은 **저장되지 않는다** (클라우드 파일시스템 휘발).
-  편집 → "수정본 CSV 다운로드" → 로컬에서 data/에 반영 → push가 정석.
+  편집 → "저장용 CSV 다운로드"(원본 스키마 그대로 export됨) →
+  `data/project_opportunity_fit.csv`에 덮어쓰기 → validate → push가 정석.
+  프로젝트 필터를 건 상태에서 받으면 해당 프로젝트 행만 들어 있으니 전체 덮어쓰기 금지.
 - Excel로 CSV 저장 시 인코딩이 깨질 수 있음 — "CSV UTF-8" 형식으로 저장.
 - 민감정보 점검 없이 push 금지 (docs/security_policy.md 체크리스트).

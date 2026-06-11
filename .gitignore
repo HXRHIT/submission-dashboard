@@ -5,4 +5,5 @@ venv/
 .DS_Store
 Thumbs.db
 *.ics
+data/backups/
 .streamlit/secrets.toml
