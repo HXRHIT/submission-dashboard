@@ -131,12 +131,92 @@ st.caption(
     "(URL 없는 값은 needs_verification)"
 )
 
-tabs = st.tabs(["🗓 투고 캘린더", "📊 후보 비교표", "🎯 프로젝트 Fit", "🔍 URL 검증",
-                "💰 비용 비교", "📈 수준 지표", "👀 Watchlist", "🤖 AI 제안 검토"])
+tabs = st.tabs(["📥 Inbox", "🗓 투고 캘린더", "📊 후보 비교표", "🎯 프로젝트 Fit",
+                "🔍 URL 검증", "💰 비용 비교", "📈 수준 지표", "👀 Watchlist",
+                "🤖 AI 제안 검토"])
 
-# ---------------------------------------------------------------- 1. calendar
+# ---------------------------------------------------------------- 1. Inbox
 with tabs[0]:
+    st.subheader("📥 이번 주 Inbox — 오늘 해야 할 것만")
+
+    open_up = ov[ov["status"].isin(["open", "upcoming"])].copy()
+    open_up["_d"] = pd.to_numeric(open_up["paper_deadline"].map(dday), errors="coerce")
+    soon = open_up[(open_up["_d"] >= 0) & (open_up["_d"] <= 30)].sort_values("_d")
+    verify_now = open_up[open_up["verification_status"] == "needs_verification"]
+    overdue_open = ov[(ov["status"] == "open") &
+                      ov["paper_deadline"].map(lambda s: (dday(s) is not None) and dday(s) < 0)]
+    wdue = watch[watch["next_check_date"].map(
+        lambda s: (to_date(s) is not None) and to_date(s) <= TODAY)]
+    wdue = wdue.merge(venues[["venue_id", "acronym"]], on="venue_id", how="left").fillna("")
+    _pu = DATA / "proposed_updates"
+    _pending = 0
+    for _p in (sorted(_pu.glob("*.csv")) if _pu.exists() else []):
+        try:
+            _pending += len(pd.read_csv(_p, dtype=str).fillna(""))
+        except Exception:  # noqa: BLE001
+            pass
+
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("🔥 Submit soon (≤30일)", len(soon))
+    c2.metric("🔍 Verify now", len(verify_now) + len(overdue_open))
+    c3.metric("👀 Watchlist due", len(wdue))
+    c4.metric("🤖 AI 제안 대기", _pending)
+
+    with st.expander(f"🔥 Submit soon — 30일 이내 마감 {len(soon)}건", expanded=True):
+        cols_s = ["acronym", "track_name", "submission_type", "paper_deadline",
+                  "deadline_timezone", "status", "verification_status", "official_cfp_url"]
+        view_s = soon[cols_s].assign(**{"D-day": soon["paper_deadline"].map(dday_label)})
+        st.dataframe(view_s, use_container_width=True, hide_index=True,
+                     column_config={"official_cfp_url": LINK_COLS["official_cfp_url"]})
+    with st.expander(f"🔍 Verify now — 미확인 {len(verify_now)}건 / 마감 지난 open {len(overdue_open)}건"):
+        st.markdown("**needs_verification (open/upcoming)** — 공식 페이지에서 마감 확인 후 입력")
+        st.dataframe(verify_now[["acronym", "track_name", "official_cfp_url", "notes"]],
+                     use_container_width=True, hide_index=True,
+                     column_config={"official_cfp_url": LINK_COLS["official_cfp_url"]})
+        st.markdown("**마감 지났는데 open** — status를 closed로 변경")
+        st.dataframe(overdue_open[["acronym", "track_name", "paper_deadline",
+                                   "official_cfp_url"]],
+                     use_container_width=True, hide_index=True,
+                     column_config={"official_cfp_url": LINK_COLS["official_cfp_url"]})
+    with st.expander(f"👀 Watchlist due — 재확인 {len(wdue)}건"):
+        st.dataframe(wdue[["watch_id", "acronym", "current_status", "next_check_date",
+                           "current_year_homepage_url", "notes"]],
+                     use_container_width=True, hide_index=True,
+                     column_config={"current_year_homepage_url":
+                                    LINK_COLS["current_year_homepage_url"]})
+    with st.expander(f"🤖 AI 제안 대기 — {_pending}행"):
+        st.markdown("'🤖 AI 제안 검토' 탭에서 diff 확인 → "
+                    "`python scripts/apply_updates.py --list`")
+    st.caption("이 화면과 동일한 내용이 매주 digest로 발송됩니다 "
+               "(scripts/generate_weekly_digest.py · GitHub Actions weekly-digest).")
+
+# ---------------------------------------------------------------- 2. calendar
+with tabs[1]:
     st.subheader("전체 투고 캘린더")
+
+    # 구독형 캘린더 안내
+    ics_path = ROOT / "public" / "submission_deadlines.ics"
+    try:
+        sub_url = json.loads((ROOT / "config" / "calendar.json")
+                             .read_text(encoding="utf-8")).get("ics_public_url", "")
+    except Exception:  # noqa: BLE001
+        sub_url = ""
+    s1, s2 = st.columns(2)
+    if sub_url:
+        s1.markdown(f"**📅 캘린더 구독:** [{sub_url}]({sub_url})  \n"
+                    f"webcal: `{sub_url.replace('https://', 'webcal://')}` "
+                    "(Google Calendar: 'URL로 추가')")
+    else:
+        s1.info("public/submission_deadlines.ics를 공개 URL에 올리고 "
+                "config/calendar.json의 ics_public_url에 넣으면 구독 링크가 표시됩니다 "
+                "(docs/update_guide.md §4).")
+    if ics_path.exists():
+        mtime = datetime.fromtimestamp(ics_path.stat().st_mtime).strftime("%Y-%m-%d %H:%M")
+        s2.caption(f"ICS 마지막 생성: {mtime}")
+        s2.download_button("ICS 다운로드", ics_path.read_bytes(),
+                           "submission_deadlines.ics", "text/calendar")
+    else:
+        s2.caption("ICS 미생성 — `python scripts/export_calendar.py`")
     events = []
     for _, r in ov.iterrows():
         for col, label in [("abstract_deadline", "abstract"), ("paper_deadline", "paper"),
@@ -184,8 +264,8 @@ with tabs[0]:
         st.caption("빨강 ≤7일 · 주황 ≤30일 · 노랑 ≤60일 · 회색 = 마감 지남. "
                    "ICS 캘린더 내보내기: `python scripts/export_calendar.py`")
 
-# ---------------------------------------------------------------- 2. compare
-with tabs[1]:
+# ---------------------------------------------------------------- 3. compare
+with tabs[2]:
     st.subheader("후보 비교표")
     f1, f2, f3, f4 = st.columns(4)
     fld = f1.multiselect("분야(field)", sorted(v for v in ov["field"].unique() if v))
@@ -248,8 +328,8 @@ with tabs[1]:
                  column_config={k: v for k, v in LINK_COLS.items() if k in cols})
     st.caption(f"{len(view)}건 표시")
 
-# ---------------------------------------------------------------- 3. fit
-with tabs[2]:
+# ---------------------------------------------------------------- 4. fit
+with tabs[3]:
     st.subheader("프로젝트별 익명 Fit 관리")
     st.caption("프로젝트는 익명 코드(P01…)와 broad field/method만 사용. "
                "내부 연구 내용은 절대 입력하지 않는다 (docs/security_policy.md).")
@@ -324,8 +404,8 @@ with tabs[2]:
             "validate → git commit/push 하세요 (docs/update_guide.md). "
             "단, 프로젝트 필터를 건 상태의 다운로드는 해당 프로젝트 행만 포함합니다.")
 
-# ---------------------------------------------------------------- 4. URL check
-with tabs[3]:
+# ---------------------------------------------------------------- 5. URL check
+with tabs[4]:
     st.subheader("URL 검증 (허위/노후 정보 제거용)")
 
     def show_issues(title, df, cols=None):
@@ -392,8 +472,8 @@ with tabs[3]:
     show_issues("⑧ 마감이 지났는데 status가 open인 기회", overdue,
                 ["opportunity_id", "track_name", "paper_deadline", "official_cfp_url"])
 
-# ---------------------------------------------------------------- 5. fees
-with tabs[4]:
+# ---------------------------------------------------------------- 6. fees
+with tabs[5]:
     st.subheader("비용 비교 (등록비 / APC)")
     fview = fees.merge(venues[["venue_id", "acronym", "venue_type"]], on="venue_id", how="left") \
                 .merge(opps[["opportunity_id", "track_name", "location_city", "location_country",
@@ -411,8 +491,8 @@ with tabs[4]:
     st.caption("amount가 빈 항목은 fee_source_url 페이지에서 직접 확인 후 입력하세요. "
                "URL 없는 금액은 입력 금지 (source policy).")
 
-# ---------------------------------------------------------------- 6. metrics
-with tabs[5]:
+# ---------------------------------------------------------------- 7. metrics
+with tabs[6]:
     st.subheader("수준 지표 비교")
     mview = metrics.merge(venues[["venue_id", "acronym", "venue_name", "venue_type", "field"]],
                           on="venue_id", how="left").fillna("")
@@ -431,8 +511,8 @@ with tabs[5]:
     st.caption("기준연도+URL 없는 지표는 값 입력 금지. SCI/SSCI/Scopus/CORE는 "
                "JCR·Scopus·CORE 포털에서 확인 후 입력 (docs/source_policy.md).")
 
-# ---------------------------------------------------------------- 7. watchlist
-with tabs[6]:
+# ---------------------------------------------------------------- 8. watchlist
+with tabs[7]:
     st.subheader("Watchlist — CFP 미공개 venue 추적")
     wview = watch.merge(venues[["venue_id", "acronym", "venue_name"]], on="venue_id", how="left").fillna("")
     wview["check_due"] = wview["next_check_date"].map(
@@ -446,8 +526,8 @@ with tabs[6]:
     due = int((wview["check_due"] != "").sum())
     st.metric("오늘 기준 확인이 필요한 항목", due)
 
-# ---------------------------------------------------------------- 8. AI proposals
-with tabs[7]:
+# ---------------------------------------------------------------- 9. AI proposals
+with tabs[8]:
     st.subheader("AI 제안 검토 (proposed_updates)")
     st.caption("AI가 만든 수정 초안은 master CSV를 직접 고치지 않고 "
                "data/proposed_updates/<테이블명>.csv 로 둔다. 여기서 diff를 검토한 뒤 "
@@ -500,9 +580,32 @@ with tabs[7]:
                 rows.append({"key": k, "change": "add", "diff": "(신규 행)",
                              "ai_confidence": r.get("ai_confidence", ""),
                              "change_note": r.get("change_note", "")})
-        st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
+        review = pd.DataFrame(rows)
+        review["decision"] = "needs_check"
+        decided = st.data_editor(
+            review, use_container_width=True, hide_index=True,
+            disabled=[c for c in review.columns if c != "decision"],
+            column_config={"decision": st.column_config.SelectboxColumn(
+                "decision", options=["accept", "skip", "needs_check"],
+                help="accept=반영 / skip=폐기 / needs_check=재확인 후 결정")},
+            key=f"decision_{p.stem}",
+        )
+        dec_out = decided.assign(table=table, decided_at=TODAY.isoformat(),
+                                 reviewer="")[
+            ["table", "key", "change", "decision", "ai_confidence",
+             "change_note", "decided_at", "reviewer"]]
+        ca, cb = st.columns(2)
+        ca.download_button(
+            f"결정 CSV 다운로드 ({table})",
+            dec_out.to_csv(index=False).encode("utf-8-sig"),
+            "proposed_updates_decisions.csv", "text/csv", key=f"dl_{p.stem}")
+        n_acc = int((decided["decision"] == "accept").sum())
+        cb.metric("accept 선택", f"{n_acc} / {len(decided)}")
         st.code(
-            f"python scripts/apply_updates.py --table {table} --apply              # 전체 반영\n"
-            f"python scripts/apply_updates.py --table {table} --apply --only KEY1,KEY2\n"
-            f"python scripts/apply_updates.py --table {table} --apply --drop KEY3",
+            "# 결정 파일 기반 반영 (accept만 병합, 나머지는 패치에 유지)\n"
+            "python scripts/apply_updates.py --apply --decisions data/proposed_updates_decisions.csv\n"
+            "# 또는 키 직접 지정\n"
+            f"python scripts/apply_updates.py --table {table} --apply --only KEY1,KEY2",
             language="bash")
+        st.caption("⚠️ 웹 배포에서는 decision이 저장되지 않습니다 — 결정 CSV를 받아 "
+                   "data/proposed_updates_decisions.csv로 두고 위 명령으로 반영하세요.")

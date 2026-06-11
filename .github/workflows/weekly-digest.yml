@@ -1,0 +1,73 @@
+name: weekly-digest
+
+on:
+  schedule:
+    - cron: "0 0 * * 1"   # 매주 월요일 09:00 KST (00:00 UTC)
+  workflow_dispatch: {}    # 수동 실행 가능
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate (리포트용 — ERROR가 있어도 digest는 생성)
+        run: python scripts/validate_data.py || true
+
+      - name: Generate calendar (public/submission_deadlines.ics)
+        run: python scripts/export_calendar.py
+
+      - name: Generate weekly digest (public/weekly_digest.md/html)
+        run: python scripts/generate_weekly_digest.py
+
+      - name: Commit outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/
+          git diff --cached --quiet || git commit -m "chore: weekly digest & calendar [skip ci]"
+          git push
+
+      - name: Deliver as GitHub Issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "📬 Weekly submission digest $(date +%F)" \
+            --body-file public/weekly_digest.md \
+            --label digest || true
+
+      # ── 선택: 메일/Slack 발송 ─────────────────────────────────────
+      # 메일(SMTP): dawidd6/action-send-mail 사용, secrets에 SMTP 정보 등록
+      # - name: Send mail
+      #   uses: dawidd6/action-send-mail@v3
+      #   with:
+      #     server_address: ${{ secrets.SMTP_SERVER }}
+      #     server_port: 465
+      #     username: ${{ secrets.SMTP_USER }}
+      #     password: ${{ secrets.SMTP_PASS }}
+      #     subject: "Weekly submission digest"
+      #     to: geunhee.lee@hanafn.com
+      #     from: dashboard-bot
+      #     html_body: file://public/weekly_digest.html
+      #
+      # Slack: secrets.SLACK_WEBHOOK_URL 등록 후
+      # - name: Send Slack
+      #   run: |
+      #     python - <<'EOF'
+      #     import json, os, urllib.request
+      #     body = open("public/weekly_digest.md", encoding="utf-8").read()[:3500]
+      #     req = urllib.request.Request(os.environ["SLACK_WEBHOOK_URL"],
+      #         json.dumps({"text": body}).encode(), {"Content-Type": "application/json"})
+      #     urllib.request.urlopen(req)
+      #     EOF
+      #   env:
+      #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

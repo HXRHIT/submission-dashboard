@@ -10,6 +10,8 @@
        python scripts/apply_updates.py --table opportunities --apply
        python scripts/apply_updates.py --table opportunities --apply --only OPP041,OPP042
        python scripts/apply_updates.py --table opportunities --apply --drop OPP043
+       # 대시보드 "AI 제안 검토" 탭에서 받은 결정 CSV 기반 (accept만 반영):
+       python scripts/apply_updates.py --apply --decisions data/proposed_updates_decisions.csv
 
 동작:
   - 키 일치 행은 update(패치에 있는 컬럼만 덮어씀), 없는 키는 append.
@@ -164,6 +166,37 @@ def apply_table(table, only, drop):
     print("git add/commit/push 잊지 마세요.")
 
 
+def apply_decisions(decisions_path, table_filter=None):
+    """결정 CSV(table,key,decision,...)에서 decision==accept 인 키만 테이블별 반영."""
+    path = Path(decisions_path)
+    if not path.exists():
+        print(f"결정 파일 없음: {path}")
+        sys.exit(1)
+    _, rows = read_csv(path)
+    tables = sorted({r.get("table", "") for r in rows if r.get("table")})
+    if table_filter:
+        tables = [t for t in tables if t == table_filter]
+    if not tables:
+        print("결정 파일에 대상 테이블이 없습니다.")
+        sys.exit(1)
+    for t in tables:
+        if t not in KEYS:
+            print(f"건너뜀 — 알 수 없는 테이블: {t}")
+            continue
+        accept = [r["key"] for r in rows
+                  if r.get("table") == t and r.get("decision") == "accept" and r.get("key")]
+        n_skip = sum(1 for r in rows if r.get("table") == t and r.get("decision") == "skip")
+        n_chk = sum(1 for r in rows if r.get("table") == t and r.get("decision") == "needs_check")
+        print(f"[{t}] accept {len(accept)} / skip {n_skip} / needs_check {n_chk}")
+        if not accept:
+            print(f"[{t}] accept된 키 없음 — 건너뜀 (skip/needs_check 행은 패치에 유지)")
+            continue
+        try:
+            apply_table(t, only=",".join(accept), drop=None)
+        except SystemExit:
+            print(f"[{t}] 반영 실패 — 다음 테이블 진행")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--list", action="store_true", help="대기 중인 패치와 diff 요약 출력")
@@ -171,8 +204,12 @@ def main():
     ap.add_argument("--apply", action="store_true")
     ap.add_argument("--only", help="이 키들만 반영 (콤마 구분)")
     ap.add_argument("--drop", help="이 키들은 제외 (콤마 구분)")
+    ap.add_argument("--decisions", help="결정 CSV 경로 — decision=accept 행만 반영")
     args = ap.parse_args()
 
+    if args.apply and args.decisions:
+        apply_decisions(args.decisions, args.table)
+        return
     if args.list or not (args.table and args.apply):
         list_patches()
         return

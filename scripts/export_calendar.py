@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
-"""opportunities.csv → ICS 캘린더 내보내기.
+"""opportunities.csv → ICS 캘린더 내보내기 (구독용 고정 경로).
 
 사용법:
-    python scripts/export_calendar.py                  # submission_deadlines.ics 생성
+    python scripts/export_calendar.py                  # public/submission_deadlines.ics 생성
     python scripts/export_calendar.py --out my.ics --status open upcoming rolling
 
-생성된 .ics 파일은 Outlook/Google Calendar에서 가져오기 하면 됩니다.
-마감일은 종일(all-day) 이벤트로 만들고 제목에 타임존(AoE 등)을 표기합니다.
+기본 출력은 항상 같은 경로(public/submission_deadlines.ics)에 덮어쓰므로,
+이 파일을 공개 URL로 노출하면 Google Calendar/Outlook에서 "URL로 구독"이 가능하다
+(매주 GitHub Actions가 재생성 — .github/workflows/weekly-digest.yml).
+ICS에는 공개 CFP 정보만 들어가므로 공개해도 안전하다 (security policy).
+마감일은 종일(all-day) 이벤트로 만들고 제목에 타임존(AoE 등)을 표기한다.
 """
 import argparse
 import csv
@@ -27,12 +30,11 @@ def esc(s: str) -> str:
 
 
 def main():
+    root = Path(__file__).resolve().parents[1]
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default="submission_deadlines.ics")
+    ap.add_argument("--out", default=str(root / "public" / "submission_deadlines.ics"))
     ap.add_argument("--status", nargs="*", default=["open", "upcoming", "rolling"])
     args = ap.parse_args()
-
-    root = Path(__file__).resolve().parents[1]
     with open(root / "data" / "opportunities.csv", encoding="utf-8-sig", newline="") as f:
         opps = list(csv.DictReader(f))
     with open(root / "data" / "venues.csv", encoding="utf-8-sig", newline="") as f:
@@ -79,6 +81,7 @@ def main():
             ]
     lines.append("END:VCALENDAR")
     out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text("\r\n".join(lines) + "\r\n", encoding="utf-8")
     print(f"wrote {out} ({n} events)")
 

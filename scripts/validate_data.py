@@ -8,6 +8,7 @@
 
 오류(ERROR)가 1건이라도 있으면 exit code 1 — CI(GitHub Actions)에 연결 가능.
 경고는 urgent / normal / backlog 로 분류된다.
+generate_weekly_digest.py 등에서 `run_checks(data_dir)`로 import해 재사용할 수 있다.
 """
 import argparse
 import csv
@@ -110,15 +111,11 @@ def check_score(table, rid, field, val):
         err(f"[{table}] {rid}: {field} 1~5 범위 벗어남: {val}")
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--data-dir", default=None)
-    ap.add_argument("--weekly", action="store_true",
-                    help="이번 주 작업 큐(urgent 경고)만 출력")
-    args = ap.parse_args()
-    root = Path(__file__).resolve().parents[1]
-    data_dir = Path(args.data_dir) if args.data_dir else root / "data"
-    today = date.today()
+def run_checks(data_dir: Path, today=None):
+    """모든 검사 실행 후 (errors, warnings) 반환. warnings = [(severity, msg)]."""
+    global errors, warnings
+    errors, warnings = [], []
+    today = today or date.today()
 
     venues = read(data_dir, "venues.csv")
     opps = read(data_dir, "opportunities.csv")
@@ -273,33 +270,46 @@ def main():
                 sev = "urgent" if (name == "opportunities" and r.get("status") in ("open", "upcoming")) else "normal"
                 warn(f"[{name}] {r.get(idf, '?')}: needs_verification", sev)
 
-    # --- report ---
-    urgent = [m for s, m in warnings if s == "urgent"]
-    normal = [m for s, m in warnings if s == "normal"]
-    backlog = [m for s, m in warnings if s == "backlog"]
+    return errors, warnings
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--data-dir", default=None)
+    ap.add_argument("--weekly", action="store_true",
+                    help="이번 주 작업 큐(urgent 경고)만 출력")
+    args = ap.parse_args()
+    root = Path(__file__).resolve().parents[1]
+    data_dir = Path(args.data_dir) if args.data_dir else root / "data"
+    today = date.today()
+
+    errs, warns = run_checks(data_dir, today)
+    urgent = [m for s, m in warns if s == "urgent"]
+    normal = [m for s, m in warns if s == "normal"]
+    backlog = [m for s, m in warns if s == "backlog"]
 
     print(f"=== validate_data.py — {today.isoformat()} ===")
     if args.weekly:
         print(f"이번 주 작업 큐 (URGENT {len(urgent)}건):")
         for m in urgent:
             print("  *", m)
-        print(f"(그 외: ERROR {len(errors)} / normal {len(normal)} / backlog {len(backlog)}"
+        print(f"(그 외: ERROR {len(errs)} / normal {len(normal)} / backlog {len(backlog)}"
               " — 전체는 --weekly 없이 실행)")
-        if errors:
+        if errs:
             sys.exit(1)
         return
 
-    print(f"ERRORS: {len(errors)}")
-    for e in errors:
+    print(f"ERRORS: {len(errs)}")
+    for e in errs:
         print("  ERROR  :", e)
-    print(f"WARNINGS: {len(warnings)} (urgent {len(urgent)} / normal {len(normal)} / backlog {len(backlog)})")
+    print(f"WARNINGS: {len(warns)} (urgent {len(urgent)} / normal {len(normal)} / backlog {len(backlog)})")
     for m in urgent:
         print("  URGENT :", m)
     for m in normal:
         print("  NORMAL :", m)
     for m in backlog:
         print("  BACKLOG:", m)
-    if errors:
+    if errs:
         sys.exit(1)
     print("OK — 필수 오류 없음")
 
