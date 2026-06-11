@@ -2,588 +2,939 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//submission-dashboard//export_calendar//KO
 CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Submission Deadlines
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:OPP001-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
 SUMMARY:[CHI] Paper deadline (AoE) — CHI 2027 Papers
-DESCRIPTION:Track: CHI 2027 Papers | Type: full paper | Status: upcoming | CFP: https://chi2027.acm.org/authors/papers/ | Deadline source: https://chi2027.acm.org/authors/papers/ | Verification: verified_official
+DESCRIPTION:Track: CHI 2027 Papers | Type: full paper | Status: upcoming 
+ | CFP: https://chi2027.acm.org/authors/papers/ | Deadline source: https:
+ //chi2027.acm.org/authors/papers/ | Verification: verified_official
 URL:https://chi2027.acm.org/authors/papers/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP001-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
 SUMMARY:[CHI] Notification — CHI 2027 Papers
-DESCRIPTION:Track: CHI 2027 Papers | Type: full paper | Status: upcoming | CFP: https://chi2027.acm.org/authors/papers/ | Deadline source: https://chi2027.acm.org/authors/papers/ | Verification: verified_official
+DESCRIPTION:Track: CHI 2027 Papers | Type: full paper | Status: upcoming 
+ | CFP: https://chi2027.acm.org/authors/papers/ | Deadline source: https:
+ //chi2027.acm.org/authors/papers/ | Verification: verified_official
 URL:https://chi2027.acm.org/authors/papers/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP001-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20270510
+DTEND;VALUE=DATE:20270511
 SUMMARY:[CHI] Conference start — CHI 2027 Papers
-DESCRIPTION:Track: CHI 2027 Papers | Type: full paper | Status: upcoming | CFP: https://chi2027.acm.org/authors/papers/ | Deadline source: https://chi2027.acm.org/authors/papers/ | Verification: verified_official
+DESCRIPTION:Track: CHI 2027 Papers | Type: full paper | Status: upcoming 
+ | CFP: https://chi2027.acm.org/authors/papers/ | Deadline source: https:
+ //chi2027.acm.org/authors/papers/ | Verification: verified_official
 URL:https://chi2027.acm.org/authors/papers/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP003-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
 SUMMARY:[CSCW] Paper deadline (AoE) — CSCW 2026 Industry Perspectives
-DESCRIPTION:Track: CSCW 2026 Industry Perspectives | Type: industry talk/demo/panel | Status: open | CFP: https://cscw.acm.org/2026/industry.html | Deadline source: https://cscw.acm.org/2026/industry.html | Verification: verified_official
+DESCRIPTION:Track: CSCW 2026 Industry Perspectives | Type: industry talk/
+ demo/panel | Status: open | CFP: https://cscw.acm.org/2026/industry.html
+  | Deadline source: https://cscw.acm.org/2026/industry.html | Verificati
+ on: verified_official
 URL:https://cscw.acm.org/2026/industry.html
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP003-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260715
+DTEND;VALUE=DATE:20260716
 SUMMARY:[CSCW] Notification — CSCW 2026 Industry Perspectives
-DESCRIPTION:Track: CSCW 2026 Industry Perspectives | Type: industry talk/demo/panel | Status: open | CFP: https://cscw.acm.org/2026/industry.html | Deadline source: https://cscw.acm.org/2026/industry.html | Verification: verified_official
+DESCRIPTION:Track: CSCW 2026 Industry Perspectives | Type: industry talk/
+ demo/panel | Status: open | CFP: https://cscw.acm.org/2026/industry.html
+  | Deadline source: https://cscw.acm.org/2026/industry.html | Verificati
+ on: verified_official
 URL:https://cscw.acm.org/2026/industry.html
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP003-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
 SUMMARY:[CSCW] Conference start — CSCW 2026 Industry Perspectives
-DESCRIPTION:Track: CSCW 2026 Industry Perspectives | Type: industry talk/demo/panel | Status: open | CFP: https://cscw.acm.org/2026/industry.html | Deadline source: https://cscw.acm.org/2026/industry.html | Verification: verified_official
+DESCRIPTION:Track: CSCW 2026 Industry Perspectives | Type: industry talk/
+ demo/panel | Status: open | CFP: https://cscw.acm.org/2026/industry.html
+  | Deadline source: https://cscw.acm.org/2026/industry.html | Verificati
+ on: verified_official
 URL:https://cscw.acm.org/2026/industry.html
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP004-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260711
 SUMMARY:[UIST] Paper deadline (AoE) — UIST 2026 Posters
-DESCRIPTION:Track: UIST 2026 Posters | Type: poster | Status: open | CFP: https://uist.acm.org/2026/cfp/ | Deadline source: https://uist.acm.org/2026/cfp/ | Verification: verified_official
+DESCRIPTION:Track: UIST 2026 Posters | Type: poster | Status: open | CFP:
+  https://uist.acm.org/2026/cfp/ | Deadline source: https://uist.acm.org/
+ 2026/cfp/ | Verification: verified_official
 URL:https://uist.acm.org/2026/cfp/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP004-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
 SUMMARY:[UIST] Notification — UIST 2026 Posters
-DESCRIPTION:Track: UIST 2026 Posters | Type: poster | Status: open | CFP: https://uist.acm.org/2026/cfp/ | Deadline source: https://uist.acm.org/2026/cfp/ | Verification: verified_official
+DESCRIPTION:Track: UIST 2026 Posters | Type: poster | Status: open | CFP:
+  https://uist.acm.org/2026/cfp/ | Deadline source: https://uist.acm.org/
+ 2026/cfp/ | Verification: verified_official
 URL:https://uist.acm.org/2026/cfp/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP004-camera_ready_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
 SUMMARY:[UIST] Camera-ready (AoE) — UIST 2026 Posters
-DESCRIPTION:Track: UIST 2026 Posters | Type: poster | Status: open | CFP: https://uist.acm.org/2026/cfp/ | Deadline source: https://uist.acm.org/2026/cfp/ | Verification: verified_official
+DESCRIPTION:Track: UIST 2026 Posters | Type: poster | Status: open | CFP:
+  https://uist.acm.org/2026/cfp/ | Deadline source: https://uist.acm.org/
+ 2026/cfp/ | Verification: verified_official
 URL:https://uist.acm.org/2026/cfp/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP004-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
 SUMMARY:[UIST] Conference start — UIST 2026 Posters
-DESCRIPTION:Track: UIST 2026 Posters | Type: poster | Status: open | CFP: https://uist.acm.org/2026/cfp/ | Deadline source: https://uist.acm.org/2026/cfp/ | Verification: verified_official
+DESCRIPTION:Track: UIST 2026 Posters | Type: poster | Status: open | CFP:
+  https://uist.acm.org/2026/cfp/ | Deadline source: https://uist.acm.org/
+ 2026/cfp/ | Verification: verified_official
 URL:https://uist.acm.org/2026/cfp/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP005-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260711
 SUMMARY:[UIST] Paper deadline (AoE) — UIST 2026 Demos
-DESCRIPTION:Track: UIST 2026 Demos | Type: demo | Status: open | CFP: https://uist.acm.org/2026/cfp/ | Deadline source: https://uist.acm.org/2026/cfp/ | Verification: verified_official
+DESCRIPTION:Track: UIST 2026 Demos | Type: demo | Status: open | CFP: htt
+ ps://uist.acm.org/2026/cfp/ | Deadline source: https://uist.acm.org/2026
+ /cfp/ | Verification: verified_official
 URL:https://uist.acm.org/2026/cfp/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP005-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
 SUMMARY:[UIST] Notification — UIST 2026 Demos
-DESCRIPTION:Track: UIST 2026 Demos | Type: demo | Status: open | CFP: https://uist.acm.org/2026/cfp/ | Deadline source: https://uist.acm.org/2026/cfp/ | Verification: verified_official
+DESCRIPTION:Track: UIST 2026 Demos | Type: demo | Status: open | CFP: htt
+ ps://uist.acm.org/2026/cfp/ | Deadline source: https://uist.acm.org/2026
+ /cfp/ | Verification: verified_official
 URL:https://uist.acm.org/2026/cfp/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP005-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
 SUMMARY:[UIST] Conference start — UIST 2026 Demos
-DESCRIPTION:Track: UIST 2026 Demos | Type: demo | Status: open | CFP: https://uist.acm.org/2026/cfp/ | Deadline source: https://uist.acm.org/2026/cfp/ | Verification: verified_official
+DESCRIPTION:Track: UIST 2026 Demos | Type: demo | Status: open | CFP: htt
+ ps://uist.acm.org/2026/cfp/ | Deadline source: https://uist.acm.org/2026
+ /cfp/ | Verification: verified_official
 URL:https://uist.acm.org/2026/cfp/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP006-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260711
 SUMMARY:[UIST] Paper deadline (AoE) — UIST 2026 Workshops
-DESCRIPTION:Track: UIST 2026 Workshops | Type: workshop paper | Status: open | CFP: https://uist.acm.org/2026/cfp/ | Deadline source: https://uist.acm.org/2026/cfp/ | Verification: verified_official
+DESCRIPTION:Track: UIST 2026 Workshops | Type: workshop paper | Status: o
+ pen | CFP: https://uist.acm.org/2026/cfp/ | Deadline source: https://uis
+ t.acm.org/2026/cfp/ | Verification: verified_official
 URL:https://uist.acm.org/2026/cfp/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP006-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
 SUMMARY:[UIST] Conference start — UIST 2026 Workshops
-DESCRIPTION:Track: UIST 2026 Workshops | Type: workshop paper | Status: open | CFP: https://uist.acm.org/2026/cfp/ | Deadline source: https://uist.acm.org/2026/cfp/ | Verification: verified_official
+DESCRIPTION:Track: UIST 2026 Workshops | Type: workshop paper | Status: o
+ pen | CFP: https://uist.acm.org/2026/cfp/ | Deadline source: https://uis
+ t.acm.org/2026/cfp/ | Verification: verified_official
 URL:https://uist.acm.org/2026/cfp/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP007-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260715
+DTEND;VALUE=DATE:20260716
 SUMMARY:[RecSys] Paper deadline (AoE) — RecSys 2026 Demos
-DESCRIPTION:Track: RecSys 2026 Demos | Type: demo | Status: open | CFP: https://recsys.acm.org/recsys26/call/ | Deadline source: https://recsys.acm.org/recsys26/call/ | Verification: verified_official
+DESCRIPTION:Track: RecSys 2026 Demos | Type: demo | Status: open | CFP: h
+ ttps://recsys.acm.org/recsys26/call/ | Deadline source: https://recsys.a
+ cm.org/recsys26/call/ | Verification: verified_official
 URL:https://recsys.acm.org/recsys26/call/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP007-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260811
 SUMMARY:[RecSys] Notification — RecSys 2026 Demos
-DESCRIPTION:Track: RecSys 2026 Demos | Type: demo | Status: open | CFP: https://recsys.acm.org/recsys26/call/ | Deadline source: https://recsys.acm.org/recsys26/call/ | Verification: verified_official
+DESCRIPTION:Track: RecSys 2026 Demos | Type: demo | Status: open | CFP: h
+ ttps://recsys.acm.org/recsys26/call/ | Deadline source: https://recsys.a
+ cm.org/recsys26/call/ | Verification: verified_official
 URL:https://recsys.acm.org/recsys26/call/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP007-camera_ready_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260818
 SUMMARY:[RecSys] Camera-ready (AoE) — RecSys 2026 Demos
-DESCRIPTION:Track: RecSys 2026 Demos | Type: demo | Status: open | CFP: https://recsys.acm.org/recsys26/call/ | Deadline source: https://recsys.acm.org/recsys26/call/ | Verification: verified_official
+DESCRIPTION:Track: RecSys 2026 Demos | Type: demo | Status: open | CFP: h
+ ttps://recsys.acm.org/recsys26/call/ | Deadline source: https://recsys.a
+ cm.org/recsys26/call/ | Verification: verified_official
 URL:https://recsys.acm.org/recsys26/call/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP007-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
 SUMMARY:[RecSys] Conference start — RecSys 2026 Demos
-DESCRIPTION:Track: RecSys 2026 Demos | Type: demo | Status: open | CFP: https://recsys.acm.org/recsys26/call/ | Deadline source: https://recsys.acm.org/recsys26/call/ | Verification: verified_official
+DESCRIPTION:Track: RecSys 2026 Demos | Type: demo | Status: open | CFP: h
+ ttps://recsys.acm.org/recsys26/call/ | Deadline source: https://recsys.a
+ cm.org/recsys26/call/ | Verification: verified_official
 URL:https://recsys.acm.org/recsys26/call/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP008-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260701
-SUMMARY:[ASSETS] Paper deadline (AoE) — ASSETS 2026 Posters & Demonstrations
-DESCRIPTION:Track: ASSETS 2026 Posters & Demonstrations | Type: poster | Status: open | CFP: https://assets26.sigaccess.org/posters_and_demos.html | Deadline source: https://assets26.sigaccess.org/call_for_papers.html | Verification: verified_official
+DTEND;VALUE=DATE:20260702
+SUMMARY:[ASSETS] Paper deadline (AoE) — ASSETS 2026 Posters & Demonstra
+ tions
+DESCRIPTION:Track: ASSETS 2026 Posters & Demonstrations | Type: poster | 
+ Status: open | CFP: https://assets26.sigaccess.org/posters_and_demos.htm
+ l | Deadline source: https://assets26.sigaccess.org/call_for_papers.html
+  | Verification: verified_official
 URL:https://assets26.sigaccess.org/posters_and_demos.html
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP008-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260805
+DTEND;VALUE=DATE:20260806
 SUMMARY:[ASSETS] Notification — ASSETS 2026 Posters & Demonstrations
-DESCRIPTION:Track: ASSETS 2026 Posters & Demonstrations | Type: poster | Status: open | CFP: https://assets26.sigaccess.org/posters_and_demos.html | Deadline source: https://assets26.sigaccess.org/call_for_papers.html | Verification: verified_official
+DESCRIPTION:Track: ASSETS 2026 Posters & Demonstrations | Type: poster | 
+ Status: open | CFP: https://assets26.sigaccess.org/posters_and_demos.htm
+ l | Deadline source: https://assets26.sigaccess.org/call_for_papers.html
+  | Verification: verified_official
 URL:https://assets26.sigaccess.org/posters_and_demos.html
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP008-camera_ready_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260819
-SUMMARY:[ASSETS] Camera-ready (AoE) — ASSETS 2026 Posters & Demonstrations
-DESCRIPTION:Track: ASSETS 2026 Posters & Demonstrations | Type: poster | Status: open | CFP: https://assets26.sigaccess.org/posters_and_demos.html | Deadline source: https://assets26.sigaccess.org/call_for_papers.html | Verification: verified_official
+DTEND;VALUE=DATE:20260820
+SUMMARY:[ASSETS] Camera-ready (AoE) — ASSETS 2026 Posters & Demonstrati
+ ons
+DESCRIPTION:Track: ASSETS 2026 Posters & Demonstrations | Type: poster | 
+ Status: open | CFP: https://assets26.sigaccess.org/posters_and_demos.htm
+ l | Deadline source: https://assets26.sigaccess.org/call_for_papers.html
+  | Verification: verified_official
 URL:https://assets26.sigaccess.org/posters_and_demos.html
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP008-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261025
-SUMMARY:[ASSETS] Conference start — ASSETS 2026 Posters & Demonstrations
-DESCRIPTION:Track: ASSETS 2026 Posters & Demonstrations | Type: poster | Status: open | CFP: https://assets26.sigaccess.org/posters_and_demos.html | Deadline source: https://assets26.sigaccess.org/call_for_papers.html | Verification: verified_official
+DTEND;VALUE=DATE:20261026
+SUMMARY:[ASSETS] Conference start — ASSETS 2026 Posters & Demonstration
+ s
+DESCRIPTION:Track: ASSETS 2026 Posters & Demonstrations | Type: poster | 
+ Status: open | CFP: https://assets26.sigaccess.org/posters_and_demos.htm
+ l | Deadline source: https://assets26.sigaccess.org/call_for_papers.html
+  | Verification: verified_official
 URL:https://assets26.sigaccess.org/posters_and_demos.html
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP010-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260615
+DTEND;VALUE=DATE:20260616
 SUMMARY:[HCOMP] Paper deadline (AoE) — HCOMP/CI 2026 Workshop Proposals
-DESCRIPTION:Track: HCOMP/CI 2026 Workshop Proposals | Type: workshop paper | Status: open | CFP: https://www.humancomputation.com/2026/submit.html | Deadline source: https://www.humancomputation.com/2026/submit.html | Verification: verified_official
+DESCRIPTION:Track: HCOMP/CI 2026 Workshop Proposals | Type: workshop pape
+ r | Status: open | CFP: https://www.humancomputation.com/2026/submit.htm
+ l | Deadline source: https://www.humancomputation.com/2026/submit.html |
+  Verification: verified_official
 URL:https://www.humancomputation.com/2026/submit.html
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP010-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260622
+DTEND;VALUE=DATE:20260623
 SUMMARY:[HCOMP] Notification — HCOMP/CI 2026 Workshop Proposals
-DESCRIPTION:Track: HCOMP/CI 2026 Workshop Proposals | Type: workshop paper | Status: open | CFP: https://www.humancomputation.com/2026/submit.html | Deadline source: https://www.humancomputation.com/2026/submit.html | Verification: verified_official
+DESCRIPTION:Track: HCOMP/CI 2026 Workshop Proposals | Type: workshop pape
+ r | Status: open | CFP: https://www.humancomputation.com/2026/submit.htm
+ l | Deadline source: https://www.humancomputation.com/2026/submit.html |
+  Verification: verified_official
 URL:https://www.humancomputation.com/2026/submit.html
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP010-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20260928
 SUMMARY:[HCOMP] Conference start — HCOMP/CI 2026 Workshop Proposals
-DESCRIPTION:Track: HCOMP/CI 2026 Workshop Proposals | Type: workshop paper | Status: open | CFP: https://www.humancomputation.com/2026/submit.html | Deadline source: https://www.humancomputation.com/2026/submit.html | Verification: verified_official
+DESCRIPTION:Track: HCOMP/CI 2026 Workshop Proposals | Type: workshop pape
+ r | Status: open | CFP: https://www.humancomputation.com/2026/submit.htm
+ l | Deadline source: https://www.humancomputation.com/2026/submit.html |
+  Verification: verified_official
 URL:https://www.humancomputation.com/2026/submit.html
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP011-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270209
 SUMMARY:[IUI] Conference start — IUI 2027 Papers
-DESCRIPTION:Track: IUI 2027 Papers | Type: full paper | Status: upcoming | CFP: https://iui.acm.org/2027/call-for-papers/ | Deadline source: https://iui.acm.org/2027/call-for-papers/ | Verification: needs_verification
+DESCRIPTION:Track: IUI 2027 Papers | Type: full paper | Status: upcoming 
+ | CFP: https://iui.acm.org/2027/call-for-papers/ | Deadline source: http
+ s://iui.acm.org/2027/call-for-papers/ | Verification: needs_verification
 URL:https://iui.acm.org/2027/call-for-papers/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP012-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260831
-SUMMARY:[MobileHCI] Conference start — MobileHCI 2026 Late-Breaking Work
-DESCRIPTION:Track: MobileHCI 2026 Late-Breaking Work | Type: late-breaking work | Status: upcoming | CFP: https://mobilehci.acm.org/2026/submit/lbw-posters.html | Deadline source: https://mobilehci.acm.org/2026/submit/lbw-posters.html | Verification: needs_verification
+DTEND;VALUE=DATE:20260901
+SUMMARY:[MobileHCI] Conference start — MobileHCI 2026 Late-Breaking Wor
+ k
+DESCRIPTION:Track: MobileHCI 2026 Late-Breaking Work | Type: late-breakin
+ g work | Status: upcoming | CFP: https://mobilehci.acm.org/2026/submit/l
+ bw-posters.html | Deadline source: https://mobilehci.acm.org/2026/submit
+ /lbw-posters.html | Verification: needs_verification
 URL:https://mobilehci.acm.org/2026/submit/lbw-posters.html
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP013-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260612
+DTEND;VALUE=DATE:20260613
 SUMMARY:[OzCHI] Paper deadline (AoE) — OzCHI 2026 Long Papers
-DESCRIPTION:Track: OzCHI 2026 Long Papers | Type: full paper | Status: open | CFP: https://www.ozchi.org/2026/papers | Deadline source: https://www.ozchi.org/2026 | Verification: verified_official
+DESCRIPTION:Track: OzCHI 2026 Long Papers | Type: full paper | Status: op
+ en | CFP: https://www.ozchi.org/2026/papers | Deadline source: https://w
+ ww.ozchi.org/2026 | Verification: verified_official
 URL:https://www.ozchi.org/2026/papers
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP013-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260801
 SUMMARY:[OzCHI] Notification — OzCHI 2026 Long Papers
-DESCRIPTION:Track: OzCHI 2026 Long Papers | Type: full paper | Status: open | CFP: https://www.ozchi.org/2026/papers | Deadline source: https://www.ozchi.org/2026 | Verification: verified_official
+DESCRIPTION:Track: OzCHI 2026 Long Papers | Type: full paper | Status: op
+ en | CFP: https://www.ozchi.org/2026/papers | Deadline source: https://w
+ ww.ozchi.org/2026 | Verification: verified_official
 URL:https://www.ozchi.org/2026/papers
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP013-camera_ready_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
 SUMMARY:[OzCHI] Camera-ready (AoE) — OzCHI 2026 Long Papers
-DESCRIPTION:Track: OzCHI 2026 Long Papers | Type: full paper | Status: open | CFP: https://www.ozchi.org/2026/papers | Deadline source: https://www.ozchi.org/2026 | Verification: verified_official
+DESCRIPTION:Track: OzCHI 2026 Long Papers | Type: full paper | Status: op
+ en | CFP: https://www.ozchi.org/2026/papers | Deadline source: https://w
+ ww.ozchi.org/2026 | Verification: verified_official
 URL:https://www.ozchi.org/2026/papers
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP013-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
 SUMMARY:[OzCHI] Conference start — OzCHI 2026 Long Papers
-DESCRIPTION:Track: OzCHI 2026 Long Papers | Type: full paper | Status: open | CFP: https://www.ozchi.org/2026/papers | Deadline source: https://www.ozchi.org/2026 | Verification: verified_official
+DESCRIPTION:Track: OzCHI 2026 Long Papers | Type: full paper | Status: op
+ en | CFP: https://www.ozchi.org/2026/papers | Deadline source: https://w
+ ww.ozchi.org/2026 | Verification: verified_official
 URL:https://www.ozchi.org/2026/papers
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP014-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260804
+DTEND;VALUE=DATE:20260805
 SUMMARY:[OzCHI] Paper deadline (AoE) — OzCHI 2026 Late-Breaking Work
-DESCRIPTION:Track: OzCHI 2026 Late-Breaking Work | Type: late-breaking work | Status: open | CFP: https://www.ozchi.org/2026/papers | Deadline source: https://www.ozchi.org/2026 | Verification: verified_official
+DESCRIPTION:Track: OzCHI 2026 Late-Breaking Work | Type: late-breaking wo
+ rk | Status: open | CFP: https://www.ozchi.org/2026/papers | Deadline so
+ urce: https://www.ozchi.org/2026 | Verification: verified_official
 URL:https://www.ozchi.org/2026/papers
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP014-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
 SUMMARY:[OzCHI] Notification — OzCHI 2026 Late-Breaking Work
-DESCRIPTION:Track: OzCHI 2026 Late-Breaking Work | Type: late-breaking work | Status: open | CFP: https://www.ozchi.org/2026/papers | Deadline source: https://www.ozchi.org/2026 | Verification: verified_official
+DESCRIPTION:Track: OzCHI 2026 Late-Breaking Work | Type: late-breaking wo
+ rk | Status: open | CFP: https://www.ozchi.org/2026/papers | Deadline so
+ urce: https://www.ozchi.org/2026 | Verification: verified_official
 URL:https://www.ozchi.org/2026/papers
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP014-camera_ready_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
 SUMMARY:[OzCHI] Camera-ready (AoE) — OzCHI 2026 Late-Breaking Work
-DESCRIPTION:Track: OzCHI 2026 Late-Breaking Work | Type: late-breaking work | Status: open | CFP: https://www.ozchi.org/2026/papers | Deadline source: https://www.ozchi.org/2026 | Verification: verified_official
+DESCRIPTION:Track: OzCHI 2026 Late-Breaking Work | Type: late-breaking wo
+ rk | Status: open | CFP: https://www.ozchi.org/2026/papers | Deadline so
+ urce: https://www.ozchi.org/2026 | Verification: verified_official
 URL:https://www.ozchi.org/2026/papers
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP014-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
 SUMMARY:[OzCHI] Conference start — OzCHI 2026 Late-Breaking Work
-DESCRIPTION:Track: OzCHI 2026 Late-Breaking Work | Type: late-breaking work | Status: open | CFP: https://www.ozchi.org/2026/papers | Deadline source: https://www.ozchi.org/2026 | Verification: verified_official
+DESCRIPTION:Track: OzCHI 2026 Late-Breaking Work | Type: late-breaking wo
+ rk | Status: open | CFP: https://www.ozchi.org/2026/papers | Deadline so
+ urce: https://www.ozchi.org/2026 | Verification: verified_official
 URL:https://www.ozchi.org/2026/papers
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP015-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260718
 SUMMARY:[OzCHI] Paper deadline (AoE) — OzCHI 2026 Workshops
-DESCRIPTION:Track: OzCHI 2026 Workshops | Type: workshop paper | Status: open | CFP: https://www.ozchi.org/2026/workshop-proposals | Deadline source: https://www.ozchi.org/2026 | Verification: verified_official
+DESCRIPTION:Track: OzCHI 2026 Workshops | Type: workshop paper | Status: 
+ open | CFP: https://www.ozchi.org/2026/workshop-proposals | Deadline sou
+ rce: https://www.ozchi.org/2026 | Verification: verified_official
 URL:https://www.ozchi.org/2026/workshop-proposals
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP015-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
 SUMMARY:[OzCHI] Notification — OzCHI 2026 Workshops
-DESCRIPTION:Track: OzCHI 2026 Workshops | Type: workshop paper | Status: open | CFP: https://www.ozchi.org/2026/workshop-proposals | Deadline source: https://www.ozchi.org/2026 | Verification: verified_official
+DESCRIPTION:Track: OzCHI 2026 Workshops | Type: workshop paper | Status: 
+ open | CFP: https://www.ozchi.org/2026/workshop-proposals | Deadline sou
+ rce: https://www.ozchi.org/2026 | Verification: verified_official
 URL:https://www.ozchi.org/2026/workshop-proposals
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP015-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
 SUMMARY:[OzCHI] Conference start — OzCHI 2026 Workshops
-DESCRIPTION:Track: OzCHI 2026 Workshops | Type: workshop paper | Status: open | CFP: https://www.ozchi.org/2026/workshop-proposals | Deadline source: https://www.ozchi.org/2026 | Verification: verified_official
+DESCRIPTION:Track: OzCHI 2026 Workshops | Type: workshop paper | Status: 
+ open | CFP: https://www.ozchi.org/2026/workshop-proposals | Deadline sou
+ rce: https://www.ozchi.org/2026 | Verification: verified_official
 URL:https://www.ozchi.org/2026/workshop-proposals
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP016-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260716
-SUMMARY:[British HCI] Paper deadline (AoE) — British HCI 2026 Short Papers
-DESCRIPTION:Track: British HCI 2026 Short Papers | Type: short paper | Status: open | CFP: https://www.britchi.uk/authors/shorts/ | Deadline source: https://www.britchi.uk/authors/ | Verification: verified_official
+DTEND;VALUE=DATE:20260717
+SUMMARY:[British HCI] Paper deadline (AoE) — British HCI 2026 Short Pap
+ ers
+DESCRIPTION:Track: British HCI 2026 Short Papers | Type: short paper | St
+ atus: open | CFP: https://www.britchi.uk/authors/shorts/ | Deadline sour
+ ce: https://www.britchi.uk/authors/ | Verification: verified_official
 URL:https://www.britchi.uk/authors/shorts/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP016-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260820
+DTEND;VALUE=DATE:20260821
 SUMMARY:[British HCI] Notification — British HCI 2026 Short Papers
-DESCRIPTION:Track: British HCI 2026 Short Papers | Type: short paper | Status: open | CFP: https://www.britchi.uk/authors/shorts/ | Deadline source: https://www.britchi.uk/authors/ | Verification: verified_official
+DESCRIPTION:Track: British HCI 2026 Short Papers | Type: short paper | St
+ atus: open | CFP: https://www.britchi.uk/authors/shorts/ | Deadline sour
+ ce: https://www.britchi.uk/authors/ | Verification: verified_official
 URL:https://www.britchi.uk/authors/shorts/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP016-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
 SUMMARY:[British HCI] Conference start — British HCI 2026 Short Papers
-DESCRIPTION:Track: British HCI 2026 Short Papers | Type: short paper | Status: open | CFP: https://www.britchi.uk/authors/shorts/ | Deadline source: https://www.britchi.uk/authors/ | Verification: verified_official
+DESCRIPTION:Track: British HCI 2026 Short Papers | Type: short paper | St
+ atus: open | CFP: https://www.britchi.uk/authors/shorts/ | Deadline sour
+ ce: https://www.britchi.uk/authors/ | Verification: verified_official
 URL:https://www.britchi.uk/authors/shorts/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP017-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260618
-SUMMARY:[British HCI] Paper deadline (AoE) — British HCI 2026 Workshops & Masterclasses
-DESCRIPTION:Track: British HCI 2026 Workshops & Masterclasses | Type: workshop paper | Status: open | CFP: https://www.britchi.uk/authors/workshops/ | Deadline source: https://www.britchi.uk/authors/ | Verification: verified_official
+DTEND;VALUE=DATE:20260619
+SUMMARY:[British HCI] Paper deadline (AoE) — British HCI 2026 Workshops
+  & Masterclasses
+DESCRIPTION:Track: British HCI 2026 Workshops & Masterclasses | Type: wor
+ kshop paper | Status: open | CFP: https://www.britchi.uk/authors/worksho
+ ps/ | Deadline source: https://www.britchi.uk/authors/ | Verification: v
+ erified_official
 URL:https://www.britchi.uk/authors/workshops/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP017-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260702
-SUMMARY:[British HCI] Notification — British HCI 2026 Workshops & Masterclasses
-DESCRIPTION:Track: British HCI 2026 Workshops & Masterclasses | Type: workshop paper | Status: open | CFP: https://www.britchi.uk/authors/workshops/ | Deadline source: https://www.britchi.uk/authors/ | Verification: verified_official
+DTEND;VALUE=DATE:20260703
+SUMMARY:[British HCI] Notification — British HCI 2026 Workshops & Maste
+ rclasses
+DESCRIPTION:Track: British HCI 2026 Workshops & Masterclasses | Type: wor
+ kshop paper | Status: open | CFP: https://www.britchi.uk/authors/worksho
+ ps/ | Deadline source: https://www.britchi.uk/authors/ | Verification: v
+ erified_official
 URL:https://www.britchi.uk/authors/workshops/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP017-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261101
-SUMMARY:[British HCI] Conference start — British HCI 2026 Workshops & Masterclasses
-DESCRIPTION:Track: British HCI 2026 Workshops & Masterclasses | Type: workshop paper | Status: open | CFP: https://www.britchi.uk/authors/workshops/ | Deadline source: https://www.britchi.uk/authors/ | Verification: verified_official
+DTEND;VALUE=DATE:20261102
+SUMMARY:[British HCI] Conference start — British HCI 2026 Workshops & M
+ asterclasses
+DESCRIPTION:Track: British HCI 2026 Workshops & Masterclasses | Type: wor
+ kshop paper | Status: open | CFP: https://www.britchi.uk/authors/worksho
+ ps/ | Deadline source: https://www.britchi.uk/authors/ | Verification: v
+ erified_official
 URL:https://www.britchi.uk/authors/workshops/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP018-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
 SUMMARY:[INTERACT] Paper deadline (unknown) — INTERACT 2027 Full Papers
-DESCRIPTION:Track: INTERACT 2027 Full Papers | Type: full paper | Status: upcoming | CFP: https://interact2027.org/calls/ | Deadline source: https://interact2027.org/ | Verification: verified_official
+DESCRIPTION:Track: INTERACT 2027 Full Papers | Type: full paper | Status:
+  upcoming | CFP: https://interact2027.org/calls/ | Deadline source: http
+ s://interact2027.org/ | Verification: verified_official
 URL:https://interact2027.org/calls/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP018-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270309
 SUMMARY:[INTERACT] Notification — INTERACT 2027 Full Papers
-DESCRIPTION:Track: INTERACT 2027 Full Papers | Type: full paper | Status: upcoming | CFP: https://interact2027.org/calls/ | Deadline source: https://interact2027.org/ | Verification: verified_official
+DESCRIPTION:Track: INTERACT 2027 Full Papers | Type: full paper | Status:
+  upcoming | CFP: https://interact2027.org/calls/ | Deadline source: http
+ s://interact2027.org/ | Verification: verified_official
 URL:https://interact2027.org/calls/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP018-camera_ready_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20270607
+DTEND;VALUE=DATE:20270608
 SUMMARY:[INTERACT] Camera-ready (unknown) — INTERACT 2027 Full Papers
-DESCRIPTION:Track: INTERACT 2027 Full Papers | Type: full paper | Status: upcoming | CFP: https://interact2027.org/calls/ | Deadline source: https://interact2027.org/ | Verification: verified_official
+DESCRIPTION:Track: INTERACT 2027 Full Papers | Type: full paper | Status:
+  upcoming | CFP: https://interact2027.org/calls/ | Deadline source: http
+ s://interact2027.org/ | Verification: verified_official
 URL:https://interact2027.org/calls/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP018-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20270823
+DTEND;VALUE=DATE:20270824
 SUMMARY:[INTERACT] Conference start — INTERACT 2027 Full Papers
-DESCRIPTION:Track: INTERACT 2027 Full Papers | Type: full paper | Status: upcoming | CFP: https://interact2027.org/calls/ | Deadline source: https://interact2027.org/ | Verification: verified_official
+DESCRIPTION:Track: INTERACT 2027 Full Papers | Type: full paper | Status:
+  upcoming | CFP: https://interact2027.org/calls/ | Deadline source: http
+ s://interact2027.org/ | Verification: verified_official
 URL:https://interact2027.org/calls/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP019-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20270503
-SUMMARY:[INTERACT] Paper deadline (unknown) — INTERACT 2027 Short Papers & Other Tracks
-DESCRIPTION:Track: INTERACT 2027 Short Papers & Other Tracks | Type: short paper | Status: upcoming | CFP: https://interact2027.org/calls/ | Deadline source: https://interact2027.org/ | Verification: verified_official
+DTEND;VALUE=DATE:20270504
+SUMMARY:[INTERACT] Paper deadline (unknown) — INTERACT 2027 Short Paper
+ s & Other Tracks
+DESCRIPTION:Track: INTERACT 2027 Short Papers & Other Tracks | Type: shor
+ t paper | Status: upcoming | CFP: https://interact2027.org/calls/ | Dead
+ line source: https://interact2027.org/ | Verification: verified_official
 URL:https://interact2027.org/calls/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP019-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20270823
-SUMMARY:[INTERACT] Conference start — INTERACT 2027 Short Papers & Other Tracks
-DESCRIPTION:Track: INTERACT 2027 Short Papers & Other Tracks | Type: short paper | Status: upcoming | CFP: https://interact2027.org/calls/ | Deadline source: https://interact2027.org/ | Verification: verified_official
+DTEND;VALUE=DATE:20270824
+SUMMARY:[INTERACT] Conference start — INTERACT 2027 Short Papers & Othe
+ r Tracks
+DESCRIPTION:Track: INTERACT 2027 Short Papers & Other Tracks | Type: shor
+ t paper | Status: upcoming | CFP: https://interact2027.org/calls/ | Dead
+ line source: https://interact2027.org/ | Verification: verified_official
 URL:https://interact2027.org/calls/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP020-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260615
-SUMMARY:[HICSS] Paper deadline (local (HST)) — HICSS-60 Full Papers (minitracks)
-DESCRIPTION:Track: HICSS-60 Full Papers (minitracks) | Type: full paper | Status: open | CFP: https://hicss.hawaii.edu/authors/ | Deadline source: https://hicss.hawaii.edu/authors/ | Verification: verified_official
+DTEND;VALUE=DATE:20260616
+SUMMARY:[HICSS] Paper deadline (local (HST)) — HICSS-60 Full Papers (mi
+ nitracks)
+DESCRIPTION:Track: HICSS-60 Full Papers (minitracks) | Type: full paper |
+  Status: open | CFP: https://hicss.hawaii.edu/authors/ | Deadline source
+ : https://hicss.hawaii.edu/authors/ | Verification: verified_official
 URL:https://hicss.hawaii.edu/authors/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP020-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260818
 SUMMARY:[HICSS] Notification — HICSS-60 Full Papers (minitracks)
-DESCRIPTION:Track: HICSS-60 Full Papers (minitracks) | Type: full paper | Status: open | CFP: https://hicss.hawaii.edu/authors/ | Deadline source: https://hicss.hawaii.edu/authors/ | Verification: verified_official
+DESCRIPTION:Track: HICSS-60 Full Papers (minitracks) | Type: full paper |
+  Status: open | CFP: https://hicss.hawaii.edu/authors/ | Deadline source
+ : https://hicss.hawaii.edu/authors/ | Verification: verified_official
 URL:https://hicss.hawaii.edu/authors/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP020-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
 SUMMARY:[HICSS] Conference start — HICSS-60 Full Papers (minitracks)
-DESCRIPTION:Track: HICSS-60 Full Papers (minitracks) | Type: full paper | Status: open | CFP: https://hicss.hawaii.edu/authors/ | Deadline source: https://hicss.hawaii.edu/authors/ | Verification: verified_official
+DESCRIPTION:Track: HICSS-60 Full Papers (minitracks) | Type: full paper |
+  Status: open | CFP: https://hicss.hawaii.edu/authors/ | Deadline source
+ : https://hicss.hawaii.edu/authors/ | Verification: verified_official
 URL:https://hicss.hawaii.edu/authors/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP021-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260621
-SUMMARY:[ICMI] Paper deadline (local (PDT GMT-7)) — ICMI 2026 Late-Breaking Results
-DESCRIPTION:Track: ICMI 2026 Late-Breaking Results | Type: late-breaking work | Status: open | CFP: https://icmi.acm.org/2026/late-breaking-results/ | Deadline source: https://icmi.acm.org/2026/important-dates/ | Verification: verified_official
+DTEND;VALUE=DATE:20260622
+SUMMARY:[ICMI] Paper deadline (local (PDT GMT-7)) — ICMI 2026 Late-Brea
+ king Results
+DESCRIPTION:Track: ICMI 2026 Late-Breaking Results | Type: late-breaking 
+ work | Status: open | CFP: https://icmi.acm.org/2026/late-breaking-resul
+ ts/ | Deadline source: https://icmi.acm.org/2026/important-dates/ | Veri
+ fication: verified_official
 URL:https://icmi.acm.org/2026/late-breaking-results/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP021-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260715
+DTEND;VALUE=DATE:20260716
 SUMMARY:[ICMI] Notification — ICMI 2026 Late-Breaking Results
-DESCRIPTION:Track: ICMI 2026 Late-Breaking Results | Type: late-breaking work | Status: open | CFP: https://icmi.acm.org/2026/late-breaking-results/ | Deadline source: https://icmi.acm.org/2026/important-dates/ | Verification: verified_official
+DESCRIPTION:Track: ICMI 2026 Late-Breaking Results | Type: late-breaking 
+ work | Status: open | CFP: https://icmi.acm.org/2026/late-breaking-resul
+ ts/ | Deadline source: https://icmi.acm.org/2026/important-dates/ | Veri
+ fication: verified_official
 URL:https://icmi.acm.org/2026/late-breaking-results/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP021-camera_ready_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260802
-SUMMARY:[ICMI] Camera-ready (local (PDT GMT-7)) — ICMI 2026 Late-Breaking Results
-DESCRIPTION:Track: ICMI 2026 Late-Breaking Results | Type: late-breaking work | Status: open | CFP: https://icmi.acm.org/2026/late-breaking-results/ | Deadline source: https://icmi.acm.org/2026/important-dates/ | Verification: verified_official
+DTEND;VALUE=DATE:20260803
+SUMMARY:[ICMI] Camera-ready (local (PDT GMT-7)) — ICMI 2026 Late-Breaki
+ ng Results
+DESCRIPTION:Track: ICMI 2026 Late-Breaking Results | Type: late-breaking 
+ work | Status: open | CFP: https://icmi.acm.org/2026/late-breaking-resul
+ ts/ | Deadline source: https://icmi.acm.org/2026/important-dates/ | Veri
+ fication: verified_official
 URL:https://icmi.acm.org/2026/late-breaking-results/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP021-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
 SUMMARY:[ICMI] Conference start — ICMI 2026 Late-Breaking Results
-DESCRIPTION:Track: ICMI 2026 Late-Breaking Results | Type: late-breaking work | Status: open | CFP: https://icmi.acm.org/2026/late-breaking-results/ | Deadline source: https://icmi.acm.org/2026/important-dates/ | Verification: verified_official
+DESCRIPTION:Track: ICMI 2026 Late-Breaking Results | Type: late-breaking 
+ work | Status: open | CFP: https://icmi.acm.org/2026/late-breaking-resul
+ ts/ | Deadline source: https://icmi.acm.org/2026/important-dates/ | Veri
+ fication: verified_official
 URL:https://icmi.acm.org/2026/late-breaking-results/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP022-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260621
-SUMMARY:[ICMI] Paper deadline (local (PDT)) — ICMI 2026 Demos & Exhibits
-DESCRIPTION:Track: ICMI 2026 Demos & Exhibits | Type: demo | Status: open | CFP: https://icmi.acm.org/2026/call-for-demos/ | Deadline source: https://icmi.acm.org/2026/important-dates/ | Verification: verified_official
+DTEND;VALUE=DATE:20260622
+SUMMARY:[ICMI] Paper deadline (local (PDT)) — ICMI 2026 Demos & Exhibit
+ s
+DESCRIPTION:Track: ICMI 2026 Demos & Exhibits | Type: demo | Status: open
+  | CFP: https://icmi.acm.org/2026/call-for-demos/ | Deadline source: htt
+ ps://icmi.acm.org/2026/important-dates/ | Verification: verified_officia
+ l
 URL:https://icmi.acm.org/2026/call-for-demos/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP022-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260715
+DTEND;VALUE=DATE:20260716
 SUMMARY:[ICMI] Notification — ICMI 2026 Demos & Exhibits
-DESCRIPTION:Track: ICMI 2026 Demos & Exhibits | Type: demo | Status: open | CFP: https://icmi.acm.org/2026/call-for-demos/ | Deadline source: https://icmi.acm.org/2026/important-dates/ | Verification: verified_official
+DESCRIPTION:Track: ICMI 2026 Demos & Exhibits | Type: demo | Status: open
+  | CFP: https://icmi.acm.org/2026/call-for-demos/ | Deadline source: htt
+ ps://icmi.acm.org/2026/important-dates/ | Verification: verified_officia
+ l
 URL:https://icmi.acm.org/2026/call-for-demos/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP022-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
 SUMMARY:[ICMI] Conference start — ICMI 2026 Demos & Exhibits
-DESCRIPTION:Track: ICMI 2026 Demos & Exhibits | Type: demo | Status: open | CFP: https://icmi.acm.org/2026/call-for-demos/ | Deadline source: https://icmi.acm.org/2026/important-dates/ | Verification: verified_official
+DESCRIPTION:Track: ICMI 2026 Demos & Exhibits | Type: demo | Status: open
+  | CFP: https://icmi.acm.org/2026/call-for-demos/ | Deadline source: htt
+ ps://icmi.acm.org/2026/important-dates/ | Verification: verified_officia
+ l
 URL:https://icmi.acm.org/2026/call-for-demos/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP023-abstract_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260625
+DTEND;VALUE=DATE:20260626
 SUMMARY:[ISMAR] Abstract deadline (AoE) — ISMAR 2026 Posters
-DESCRIPTION:Track: ISMAR 2026 Posters | Type: poster | Status: open | CFP: https://www.ieeeismar.net/2026/call-for-posters/ | Deadline source: https://www.ieeeismar.net/2026/call-for-posters/ | Verification: verified_official
+DESCRIPTION:Track: ISMAR 2026 Posters | Type: poster | Status: open | CFP
+ : https://www.ieeeismar.net/2026/call-for-posters/ | Deadline source: ht
+ tps://www.ieeeismar.net/2026/call-for-posters/ | Verification: verified_
+ official
 URL:https://www.ieeeismar.net/2026/call-for-posters/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP023-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260630
+DTEND;VALUE=DATE:20260701
 SUMMARY:[ISMAR] Paper deadline (AoE) — ISMAR 2026 Posters
-DESCRIPTION:Track: ISMAR 2026 Posters | Type: poster | Status: open | CFP: https://www.ieeeismar.net/2026/call-for-posters/ | Deadline source: https://www.ieeeismar.net/2026/call-for-posters/ | Verification: verified_official
+DESCRIPTION:Track: ISMAR 2026 Posters | Type: poster | Status: open | CFP
+ : https://www.ieeeismar.net/2026/call-for-posters/ | Deadline source: ht
+ tps://www.ieeeismar.net/2026/call-for-posters/ | Verification: verified_
+ official
 URL:https://www.ieeeismar.net/2026/call-for-posters/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP023-notification_date@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260730
+DTEND;VALUE=DATE:20260731
 SUMMARY:[ISMAR] Notification — ISMAR 2026 Posters
-DESCRIPTION:Track: ISMAR 2026 Posters | Type: poster | Status: open | CFP: https://www.ieeeismar.net/2026/call-for-posters/ | Deadline source: https://www.ieeeismar.net/2026/call-for-posters/ | Verification: verified_official
+DESCRIPTION:Track: ISMAR 2026 Posters | Type: poster | Status: open | CFP
+ : https://www.ieeeismar.net/2026/call-for-posters/ | Deadline source: ht
+ tps://www.ieeeismar.net/2026/call-for-posters/ | Verification: verified_
+ official
 URL:https://www.ieeeismar.net/2026/call-for-posters/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP023-camera_ready_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260805
+DTEND;VALUE=DATE:20260806
 SUMMARY:[ISMAR] Camera-ready (AoE) — ISMAR 2026 Posters
-DESCRIPTION:Track: ISMAR 2026 Posters | Type: poster | Status: open | CFP: https://www.ieeeismar.net/2026/call-for-posters/ | Deadline source: https://www.ieeeismar.net/2026/call-for-posters/ | Verification: verified_official
+DESCRIPTION:Track: ISMAR 2026 Posters | Type: poster | Status: open | CFP
+ : https://www.ieeeismar.net/2026/call-for-posters/ | Deadline source: ht
+ tps://www.ieeeismar.net/2026/call-for-posters/ | Verification: verified_
+ official
 URL:https://www.ieeeismar.net/2026/call-for-posters/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP023-conference_start@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
 SUMMARY:[ISMAR] Conference start — ISMAR 2026 Posters
-DESCRIPTION:Track: ISMAR 2026 Posters | Type: poster | Status: open | CFP: https://www.ieeeismar.net/2026/call-for-posters/ | Deadline source: https://www.ieeeismar.net/2026/call-for-posters/ | Verification: verified_official
+DESCRIPTION:Track: ISMAR 2026 Posters | Type: poster | Status: open | CFP
+ : https://www.ieeeismar.net/2026/call-for-posters/ | Deadline source: ht
+ tps://www.ieeeismar.net/2026/call-for-posters/ | Verification: verified_
+ official
 URL:https://www.ieeeismar.net/2026/call-for-posters/
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP025-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261101
-SUMMARY:[IMWUT] Paper deadline (AoE) — IMWUT New Submissions (2026-11-01 cycle)
-DESCRIPTION:Track: IMWUT New Submissions (2026-11-01 cycle) | Type: journal article | Status: open | CFP: https://dl.acm.org/journal/imwut/how-to-submit | Deadline source: https://dl.acm.org/journal/imwut/how-to-submit | Verification: verified_official
+DTEND;VALUE=DATE:20261102
+SUMMARY:[IMWUT] Paper deadline (AoE) — IMWUT New Submissions (2026-11-0
+ 1 cycle)
+DESCRIPTION:Track: IMWUT New Submissions (2026-11-01 cycle) | Type: journ
+ al article | Status: open | CFP: https://dl.acm.org/journal/imwut/how-to
+ -submit | Deadline source: https://dl.acm.org/journal/imwut/how-to-submi
+ t | Verification: verified_official
 URL:https://dl.acm.org/journal/imwut/how-to-submit
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP032-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261204
-SUMMARY:[ISF] Paper deadline — ISF SI: From Adoption to Impact (ICT & AI)
-DESCRIPTION:Track: ISF SI: From Adoption to Impact (ICT & AI) | Type: special issue | Status: open | CFP: https://link.springer.com/journal/10796 | Deadline source: https://link.springer.com/journal/10796 | Verification: verified_official
+DTEND;VALUE=DATE:20261205
+SUMMARY:[ISF] Paper deadline — ISF SI: From Adoption to Impact (ICT & A
+ I)
+DESCRIPTION:Track: ISF SI: From Adoption to Impact (ICT & AI) | Type: spe
+ cial issue | Status: open | CFP: https://link.springer.com/journal/10796
+  | Deadline source: https://link.springer.com/journal/10796 | Verificati
+ on: verified_official
 URL:https://link.springer.com/journal/10796
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP033-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20270115
-SUMMARY:[ISF] Paper deadline — ISF SI: Humans in the Loop in AI-Driven Information Security
-DESCRIPTION:Track: ISF SI: Humans in the Loop in AI-Driven Information Security | Type: special issue | Status: open | CFP: https://link.springer.com/journal/10796 | Deadline source: https://link.springer.com/journal/10796 | Verification: verified_official
+DTEND;VALUE=DATE:20270116
+SUMMARY:[ISF] Paper deadline — ISF SI: Humans in the Loop in AI-Driven 
+ Information Security
+DESCRIPTION:Track: ISF SI: Humans in the Loop in AI-Driven Information Se
+ curity | Type: special issue | Status: open | CFP: https://link.springer
+ .com/journal/10796 | Deadline source: https://link.springer.com/journal/
+ 10796 | Verification: verified_official
 URL:https://link.springer.com/journal/10796
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP034-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260830
-SUMMARY:[ISF] Paper deadline — ISF SI: AI\, Affective Computing and Video Analytics
-DESCRIPTION:Track: ISF SI: AI\, Affective Computing and Video Analytics | Type: special issue | Status: open | CFP: https://link.springer.com/journal/10796 | Deadline source: https://link.springer.com/journal/10796 | Verification: verified_official
+DTEND;VALUE=DATE:20260831
+SUMMARY:[ISF] Paper deadline — ISF SI: AI\, Affective Computing and Vid
+ eo Analytics
+DESCRIPTION:Track: ISF SI: AI\, Affective Computing and Video Analytics |
+  Type: special issue | Status: open | CFP: https://link.springer.com/jou
+ rnal/10796 | Deadline source: https://link.springer.com/journal/10796 | 
+ Verification: verified_official
 URL:https://link.springer.com/journal/10796
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP035-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20260831
-SUMMARY:[EM] Paper deadline — EM Topical Collection: Contemporary Research in Fintech
-DESCRIPTION:Track: EM Topical Collection: Contemporary Research in Fintech | Type: special issue | Status: open | CFP: https://link.springer.com/journal/12525 | Deadline source: https://link.springer.com/journal/12525 | Verification: verified_official
+DTEND;VALUE=DATE:20260901
+SUMMARY:[EM] Paper deadline — EM Topical Collection: Contemporary Resea
+ rch in Fintech
+DESCRIPTION:Track: EM Topical Collection: Contemporary Research in Fintec
+ h | Type: special issue | Status: open | CFP: https://link.springer.com/
+ journal/12525 | Deadline source: https://link.springer.com/journal/12525
+  | Verification: verified_official
 URL:https://link.springer.com/journal/12525
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP036-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20261201
-SUMMARY:[EM] Paper deadline — EM TC: Critical Perspectives on Digital Platform Ecosystems
-DESCRIPTION:Track: EM TC: Critical Perspectives on Digital Platform Ecosystems | Type: special issue | Status: open | CFP: https://link.springer.com/journal/12525 | Deadline source: https://link.springer.com/journal/12525 | Verification: verified_official
+DTEND;VALUE=DATE:20261202
+SUMMARY:[EM] Paper deadline — EM TC: Critical Perspectives on Digital P
+ latform Ecosystems
+DESCRIPTION:Track: EM TC: Critical Perspectives on Digital Platform Ecosy
+ stems | Type: special issue | Status: open | CFP: https://link.springer.
+ com/journal/12525 | Deadline source: https://link.springer.com/journal/1
+ 2525 | Verification: verified_official
 URL:https://link.springer.com/journal/12525
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP037-paper_deadline@submission-dashboard
-DTSTAMP:20260611T062755Z
+DTSTAMP:20260611T071041Z
 DTSTART;VALUE=DATE:20270930
-SUMMARY:[FIN] Paper deadline — FIN SI: Agentic Narrative Finance (Multimodal AI & Markets)
-DESCRIPTION:Track: FIN SI: Agentic Narrative Finance (Multimodal AI & Markets) | Type: special issue | Status: open | CFP: https://link.springer.com/journal/40854 | Deadline source: https://link.springer.com/journal/40854 | Verification: verified_official
+DTEND;VALUE=DATE:20271001
+SUMMARY:[FIN] Paper deadline — FIN SI: Agentic Narrative Finance (Multi
+ modal AI & Markets)
+DESCRIPTION:Track: FIN SI: Agentic Narrative Finance (Multimodal AI & Mar
+ kets) | Type: special issue | Status: open | CFP: https://link.springer.
+ com/journal/40854 | Deadline source: https://link.springer.com/journal/4
+ 0854 | Verification: verified_official
 URL:https://link.springer.com/journal/40854
+TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

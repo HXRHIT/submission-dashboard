@@ -13,7 +13,7 @@ ICS에는 공개 CFP 정보만 들어가므로 공개해도 안전하다 (securi
 """
 import argparse
 import csv
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 EVENT_FIELDS = [
@@ -29,6 +29,25 @@ def esc(s: str) -> str:
     return s.replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
 
 
+def fold(line: str) -> str:
+    """RFC 5545 줄접기: 한 줄 최대 75옥텟, 이어지는 줄은 공백으로 시작.
+    Google Calendar는 길게 이어진 줄을 조용히 거부할 수 있어 필수."""
+    b = line.encode("utf-8")
+    if len(b) <= 73:
+        return line
+    parts = []
+    first = True
+    while b:
+        limit = 73 if first else 72
+        cut = min(limit, len(b))
+        while cut < len(b) and (b[cut] & 0xC0) == 0x80:  # UTF-8 문자 중간에서 자르지 않기
+            cut -= 1
+        parts.append(b[:cut].decode("utf-8"))
+        b = b[cut:]
+        first = False
+    return "\r\n ".join(parts)
+
+
 def main():
     root = Path(__file__).resolve().parents[1]
     ap = argparse.ArgumentParser()
@@ -42,7 +61,13 @@ def main():
 
     now = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
     lines = ["BEGIN:VCALENDAR", "VERSION:2.0",
-             "PRODID:-//submission-dashboard//export_calendar//KO", "CALSCALE:GREGORIAN"]
+             "PRODID:-//submission-dashboard//export_calendar//KO",
+             "CALSCALE:GREGORIAN",
+             "METHOD:PUBLISH",
+             "X-WR-CALNAME:Submission Deadlines",
+             "X-WR-TIMEZONE:Asia/Seoul",
+             "REFRESH-INTERVAL;VALUE=DURATION:P1D",
+             "X-PUBLISHED-TTL:P1D"]
     n = 0
     for r in opps:
         if args.status and r.get("status", "") not in args.status:
@@ -74,15 +99,17 @@ def main():
                 f"UID:{uid}",
                 f"DTSTAMP:{now}",
                 f"DTSTART;VALUE=DATE:{d.strftime('%Y%m%d')}",
+                f"DTEND;VALUE=DATE:{(d + timedelta(days=1)).strftime('%Y%m%d')}",
                 f"SUMMARY:{esc(summary)}",
                 f"DESCRIPTION:{esc(' | '.join(desc_parts))}",
                 f"URL:{r.get('official_cfp_url', '')}",
+                "TRANSP:TRANSPARENT",
                 "END:VEVENT",
             ]
     lines.append("END:VCALENDAR")
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text("\r\n".join(lines) + "\r\n", encoding="utf-8")
+    out.write_text("\r\n".join(fold(ln) for ln in lines) + "\r\n", encoding="utf-8")
     print(f"wrote {out} ({n} events)")
 
 
