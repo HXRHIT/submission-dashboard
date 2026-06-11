@@ -10,6 +10,7 @@
 import json
 from datetime import date, datetime
 from pathlib import Path
+from urllib.parse import quote
 
 import pandas as pd
 import streamlit as st
@@ -203,9 +204,20 @@ with tabs[1]:
         sub_url = ""
     s1, s2 = st.columns(2)
     if sub_url:
-        s1.markdown(f"**📅 캘린더 구독:** [{sub_url}]({sub_url})  \n"
-                    f"webcal: `{sub_url.replace('https://', 'webcal://')}` "
-                    "(Google Calendar: 'URL로 추가')")
+        webcal = sub_url.replace("https://", "webcal://")
+        gcal = "https://calendar.google.com/calendar/r?cid=" + quote(webcal, safe="")
+        outlook = ("https://outlook.live.com/calendar/0/addfromweb?url="
+                   + quote(sub_url, safe="") + "&name=" + quote("투고 마감 캘린더"))
+        o365 = ("https://outlook.office.com/calendar/0/addfromweb?url="
+                + quote(sub_url, safe="") + "&name=" + quote("투고 마감 캘린더"))
+        s1.markdown("**📅 캘린더 구독** — 클릭하면 구독 화면이 바로 열립니다")
+        b1, b2, b3 = s1.columns(3)
+        b1.link_button("Google Calendar", gcal, use_container_width=True)
+        b2.link_button("Outlook.com", outlook, use_container_width=True)
+        b3.link_button("Office 365", o365, use_container_width=True)
+        with s1.expander("수동 추가용 URL (구독이 안 열릴 때)"):
+            st.code(sub_url, language=None)
+            st.caption("Google Calendar → 다른 캘린더 + → 'URL로 추가'에 붙여넣기")
     else:
         s1.info("public/submission_deadlines.ics를 공개 URL에 올리고 "
                 "config/calendar.json의 ics_public_url에 넣으면 구독 링크가 표시됩니다 "
@@ -609,3 +621,5 @@ with tabs[8]:
             language="bash")
         st.caption("⚠️ 웹 배포에서는 decision이 저장되지 않습니다 — 결정 CSV를 받아 "
                    "data/proposed_updates_decisions.csv로 두고 위 명령으로 반영하세요.")
+
+# end of app
