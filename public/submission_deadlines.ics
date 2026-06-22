@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:P1D
 X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:OPP001-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260910
 DTEND;VALUE=DATE:20260911
 SUMMARY:[CHI] Paper deadline (AoE) — CHI 2027 Papers
@@ -21,7 +21,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP001-notification_date@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20261217
 DTEND;VALUE=DATE:20261218
 SUMMARY:[CHI] Notification — CHI 2027 Papers
@@ -33,7 +33,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP001-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20270510
 DTEND;VALUE=DATE:20270511
 SUMMARY:[CHI] Conference start — CHI 2027 Papers
@@ -45,7 +45,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP003-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260701
 DTEND;VALUE=DATE:20260702
 SUMMARY:[CSCW] Paper deadline (AoE) — CSCW 2026 Industry Perspectives
@@ -58,7 +58,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP003-notification_date@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260715
 DTEND;VALUE=DATE:20260716
 SUMMARY:[CSCW] Notification — CSCW 2026 Industry Perspectives
@@ -71,7 +71,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP003-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:[CSCW] Conference start — CSCW 2026 Industry Perspectives
@@ -84,7 +84,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP004-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260710
 DTEND;VALUE=DATE:20260711
 SUMMARY:[UIST] Paper deadline (AoE) — UIST 2026 Posters
@@ -96,7 +96,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP004-notification_date@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260815
 SUMMARY:[UIST] Notification — UIST 2026 Posters
@@ -108,7 +108,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP004-camera_ready_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260821
 DTEND;VALUE=DATE:20260822
 SUMMARY:[UIST] Camera-ready (AoE) — UIST 2026 Posters
@@ -120,7 +120,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP004-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 SUMMARY:[UIST] Conference start — UIST 2026 Posters
@@ -132,7 +132,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP005-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260710
 DTEND;VALUE=DATE:20260711
 SUMMARY:[UIST] Paper deadline (AoE) — UIST 2026 Demos
@@ -144,7 +144,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP005-notification_date@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260815
 SUMMARY:[UIST] Notification — UIST 2026 Demos
@@ -156,7 +156,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP005-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 SUMMARY:[UIST] Conference start — UIST 2026 Demos
@@ -168,7 +168,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP006-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260710
 DTEND;VALUE=DATE:20260711
 SUMMARY:[UIST] Paper deadline (AoE) — UIST 2026 Workshops
@@ -180,7 +180,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP006-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 SUMMARY:[UIST] Conference start — UIST 2026 Workshops
@@ -192,7 +192,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP007-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260715
 DTEND;VALUE=DATE:20260716
 SUMMARY:[RecSys] Paper deadline (AoE) — RecSys 2026 Demos
@@ -204,7 +204,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP007-notification_date@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260810
 DTEND;VALUE=DATE:20260811
 SUMMARY:[RecSys] Notification — RecSys 2026 Demos
@@ -216,7 +216,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP007-camera_ready_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260817
 DTEND;VALUE=DATE:20260818
 SUMMARY:[RecSys] Camera-ready (AoE) — RecSys 2026 Demos
@@ -228,7 +228,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP007-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20260929
 SUMMARY:[RecSys] Conference start — RecSys 2026 Demos
@@ -240,7 +240,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP008-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260701
 DTEND;VALUE=DATE:20260702
 SUMMARY:[ASSETS] Paper deadline (AoE) — ASSETS 2026 Posters & Demonstra
@@ -254,7 +254,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP008-notification_date@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260805
 DTEND;VALUE=DATE:20260806
 SUMMARY:[ASSETS] Notification — ASSETS 2026 Posters & Demonstrations
@@ -267,7 +267,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP008-camera_ready_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260819
 DTEND;VALUE=DATE:20260820
 SUMMARY:[ASSETS] Camera-ready (AoE) — ASSETS 2026 Posters & Demonstrati
@@ -281,7 +281,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP008-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:[ASSETS] Conference start — ASSETS 2026 Posters & Demonstration
@@ -294,47 +294,8 @@ URL:https://assets26.sigaccess.org/posters_and_demos.html
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:OPP010-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
-DTSTART;VALUE=DATE:20260615
-DTEND;VALUE=DATE:20260616
-SUMMARY:[HCOMP] Paper deadline (AoE) — HCOMP/CI 2026 Workshop Proposals
-DESCRIPTION:Track: HCOMP/CI 2026 Workshop Proposals | Type: workshop pape
- r | Status: open | CFP: https://www.humancomputation.com/2026/submit.htm
- l | Deadline source: https://www.humancomputation.com/2026/submit.html |
-  Verification: verified_official
-URL:https://www.humancomputation.com/2026/submit.html
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP010-notification_date@submission-dashboard
-DTSTAMP:20260615T025345Z
-DTSTART;VALUE=DATE:20260622
-DTEND;VALUE=DATE:20260623
-SUMMARY:[HCOMP] Notification — HCOMP/CI 2026 Workshop Proposals
-DESCRIPTION:Track: HCOMP/CI 2026 Workshop Proposals | Type: workshop pape
- r | Status: open | CFP: https://www.humancomputation.com/2026/submit.htm
- l | Deadline source: https://www.humancomputation.com/2026/submit.html |
-  Verification: verified_official
-URL:https://www.humancomputation.com/2026/submit.html
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP010-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
-DTSTART;VALUE=DATE:20260927
-DTEND;VALUE=DATE:20260928
-SUMMARY:[HCOMP] Conference start — HCOMP/CI 2026 Workshop Proposals
-DESCRIPTION:Track: HCOMP/CI 2026 Workshop Proposals | Type: workshop pape
- r | Status: open | CFP: https://www.humancomputation.com/2026/submit.htm
- l | Deadline source: https://www.humancomputation.com/2026/submit.html |
-  Verification: verified_official
-URL:https://www.humancomputation.com/2026/submit.html
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:OPP011-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20270208
 DTEND;VALUE=DATE:20270209
 SUMMARY:[IUI] Conference start — IUI 2027 Papers
@@ -346,7 +307,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP012-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260831
 DTEND;VALUE=DATE:20260901
 SUMMARY:[MobileHCI] Conference start — MobileHCI 2026 Late-Breaking Wor
@@ -360,7 +321,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP014-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260804
 DTEND;VALUE=DATE:20260805
 SUMMARY:[OzCHI] Paper deadline (AoE) — OzCHI 2026 Late-Breaking Work
@@ -372,7 +333,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP014-notification_date@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260925
 SUMMARY:[OzCHI] Notification — OzCHI 2026 Late-Breaking Work
@@ -384,7 +345,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP014-camera_ready_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261004
 SUMMARY:[OzCHI] Camera-ready (AoE) — OzCHI 2026 Late-Breaking Work
@@ -396,7 +357,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP014-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:[OzCHI] Conference start — OzCHI 2026 Late-Breaking Work
@@ -408,7 +369,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP015-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260717
 DTEND;VALUE=DATE:20260718
 SUMMARY:[OzCHI] Paper deadline (AoE) — OzCHI 2026 Workshops
@@ -420,7 +381,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP015-notification_date@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260821
 DTEND;VALUE=DATE:20260822
 SUMMARY:[OzCHI] Notification — OzCHI 2026 Workshops
@@ -432,7 +393,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP015-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:[OzCHI] Conference start — OzCHI 2026 Workshops
@@ -444,7 +405,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP016-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260716
 DTEND;VALUE=DATE:20260717
 SUMMARY:[British HCI] Paper deadline (AoE) — British HCI 2026 Short Pap
@@ -457,7 +418,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP016-notification_date@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260820
 DTEND;VALUE=DATE:20260821
 SUMMARY:[British HCI] Notification — British HCI 2026 Short Papers
@@ -469,7 +430,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP016-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:[British HCI] Conference start — British HCI 2026 Short Papers
@@ -480,50 +441,8 @@ URL:https://www.britchi.uk/authors/shorts/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:OPP017-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
-DTSTART;VALUE=DATE:20260618
-DTEND;VALUE=DATE:20260619
-SUMMARY:[British HCI] Paper deadline (AoE) — British HCI 2026 Workshops
-  & Masterclasses
-DESCRIPTION:Track: British HCI 2026 Workshops & Masterclasses | Type: wor
- kshop paper | Status: open | CFP: https://www.britchi.uk/authors/worksho
- ps/ | Deadline source: https://www.britchi.uk/authors/ | Verification: v
- erified_official
-URL:https://www.britchi.uk/authors/workshops/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP017-notification_date@submission-dashboard
-DTSTAMP:20260615T025345Z
-DTSTART;VALUE=DATE:20260702
-DTEND;VALUE=DATE:20260703
-SUMMARY:[British HCI] Notification — British HCI 2026 Workshops & Maste
- rclasses
-DESCRIPTION:Track: British HCI 2026 Workshops & Masterclasses | Type: wor
- kshop paper | Status: open | CFP: https://www.britchi.uk/authors/worksho
- ps/ | Deadline source: https://www.britchi.uk/authors/ | Verification: v
- erified_official
-URL:https://www.britchi.uk/authors/workshops/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP017-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:[British HCI] Conference start — British HCI 2026 Workshops & M
- asterclasses
-DESCRIPTION:Track: British HCI 2026 Workshops & Masterclasses | Type: wor
- kshop paper | Status: open | CFP: https://www.britchi.uk/authors/worksho
- ps/ | Deadline source: https://www.britchi.uk/authors/ | Verification: v
- erified_official
-URL:https://www.britchi.uk/authors/workshops/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:OPP018-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270202
 SUMMARY:[INTERACT] Paper deadline (unknown) — INTERACT 2027 Full Papers
@@ -535,7 +454,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP018-notification_date@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20270308
 DTEND;VALUE=DATE:20270309
 SUMMARY:[INTERACT] Notification — INTERACT 2027 Full Papers
@@ -547,7 +466,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP018-camera_ready_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20270607
 DTEND;VALUE=DATE:20270608
 SUMMARY:[INTERACT] Camera-ready (unknown) — INTERACT 2027 Full Papers
@@ -559,7 +478,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP018-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20270823
 DTEND;VALUE=DATE:20270824
 SUMMARY:[INTERACT] Conference start — INTERACT 2027 Full Papers
@@ -571,7 +490,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP019-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20270503
 DTEND;VALUE=DATE:20270504
 SUMMARY:[INTERACT] Paper deadline (unknown) — INTERACT 2027 Short Paper
@@ -584,7 +503,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP019-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20270823
 DTEND;VALUE=DATE:20270824
 SUMMARY:[INTERACT] Conference start — INTERACT 2027 Short Papers & Othe
@@ -596,139 +515,8 @@ URL:https://interact2027.org/calls/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:OPP020-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
-DTSTART;VALUE=DATE:20260615
-DTEND;VALUE=DATE:20260616
-SUMMARY:[HICSS] Paper deadline (local (HST)) — HICSS-60 Full Papers (mi
- nitracks)
-DESCRIPTION:Track: HICSS-60 Full Papers (minitracks) | Type: full paper |
-  Status: open | CFP: https://hicss.hawaii.edu/authors/ | Deadline source
- : https://hicss.hawaii.edu/authors/ | Verification: verified_official
-URL:https://hicss.hawaii.edu/authors/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP020-notification_date@submission-dashboard
-DTSTAMP:20260615T025345Z
-DTSTART;VALUE=DATE:20260817
-DTEND;VALUE=DATE:20260818
-SUMMARY:[HICSS] Notification — HICSS-60 Full Papers (minitracks)
-DESCRIPTION:Track: HICSS-60 Full Papers (minitracks) | Type: full paper |
-  Status: open | CFP: https://hicss.hawaii.edu/authors/ | Deadline source
- : https://hicss.hawaii.edu/authors/ | Verification: verified_official
-URL:https://hicss.hawaii.edu/authors/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP020-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
-DTSTART;VALUE=DATE:20270105
-DTEND;VALUE=DATE:20270106
-SUMMARY:[HICSS] Conference start — HICSS-60 Full Papers (minitracks)
-DESCRIPTION:Track: HICSS-60 Full Papers (minitracks) | Type: full paper |
-  Status: open | CFP: https://hicss.hawaii.edu/authors/ | Deadline source
- : https://hicss.hawaii.edu/authors/ | Verification: verified_official
-URL:https://hicss.hawaii.edu/authors/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP021-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
-DTSTART;VALUE=DATE:20260621
-DTEND;VALUE=DATE:20260622
-SUMMARY:[ICMI] Paper deadline (local (PDT GMT-7)) — ICMI 2026 Late-Brea
- king Results
-DESCRIPTION:Track: ICMI 2026 Late-Breaking Results | Type: late-breaking 
- work | Status: open | CFP: https://icmi.acm.org/2026/late-breaking-resul
- ts/ | Deadline source: https://icmi.acm.org/2026/important-dates/ | Veri
- fication: verified_official
-URL:https://icmi.acm.org/2026/late-breaking-results/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP021-notification_date@submission-dashboard
-DTSTAMP:20260615T025345Z
-DTSTART;VALUE=DATE:20260715
-DTEND;VALUE=DATE:20260716
-SUMMARY:[ICMI] Notification — ICMI 2026 Late-Breaking Results
-DESCRIPTION:Track: ICMI 2026 Late-Breaking Results | Type: late-breaking 
- work | Status: open | CFP: https://icmi.acm.org/2026/late-breaking-resul
- ts/ | Deadline source: https://icmi.acm.org/2026/important-dates/ | Veri
- fication: verified_official
-URL:https://icmi.acm.org/2026/late-breaking-results/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP021-camera_ready_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
-DTSTART;VALUE=DATE:20260802
-DTEND;VALUE=DATE:20260803
-SUMMARY:[ICMI] Camera-ready (local (PDT GMT-7)) — ICMI 2026 Late-Breaki
- ng Results
-DESCRIPTION:Track: ICMI 2026 Late-Breaking Results | Type: late-breaking 
- work | Status: open | CFP: https://icmi.acm.org/2026/late-breaking-resul
- ts/ | Deadline source: https://icmi.acm.org/2026/important-dates/ | Veri
- fication: verified_official
-URL:https://icmi.acm.org/2026/late-breaking-results/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP021-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
-DTSTART;VALUE=DATE:20261005
-DTEND;VALUE=DATE:20261006
-SUMMARY:[ICMI] Conference start — ICMI 2026 Late-Breaking Results
-DESCRIPTION:Track: ICMI 2026 Late-Breaking Results | Type: late-breaking 
- work | Status: open | CFP: https://icmi.acm.org/2026/late-breaking-resul
- ts/ | Deadline source: https://icmi.acm.org/2026/important-dates/ | Veri
- fication: verified_official
-URL:https://icmi.acm.org/2026/late-breaking-results/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP022-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
-DTSTART;VALUE=DATE:20260621
-DTEND;VALUE=DATE:20260622
-SUMMARY:[ICMI] Paper deadline (local (PDT)) — ICMI 2026 Demos & Exhibit
- s
-DESCRIPTION:Track: ICMI 2026 Demos & Exhibits | Type: demo | Status: open
-  | CFP: https://icmi.acm.org/2026/call-for-demos/ | Deadline source: htt
- ps://icmi.acm.org/2026/important-dates/ | Verification: verified_officia
- l
-URL:https://icmi.acm.org/2026/call-for-demos/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP022-notification_date@submission-dashboard
-DTSTAMP:20260615T025345Z
-DTSTART;VALUE=DATE:20260715
-DTEND;VALUE=DATE:20260716
-SUMMARY:[ICMI] Notification — ICMI 2026 Demos & Exhibits
-DESCRIPTION:Track: ICMI 2026 Demos & Exhibits | Type: demo | Status: open
-  | CFP: https://icmi.acm.org/2026/call-for-demos/ | Deadline source: htt
- ps://icmi.acm.org/2026/important-dates/ | Verification: verified_officia
- l
-URL:https://icmi.acm.org/2026/call-for-demos/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP022-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
-DTSTART;VALUE=DATE:20261005
-DTEND;VALUE=DATE:20261006
-SUMMARY:[ICMI] Conference start — ICMI 2026 Demos & Exhibits
-DESCRIPTION:Track: ICMI 2026 Demos & Exhibits | Type: demo | Status: open
-  | CFP: https://icmi.acm.org/2026/call-for-demos/ | Deadline source: htt
- ps://icmi.acm.org/2026/important-dates/ | Verification: verified_officia
- l
-URL:https://icmi.acm.org/2026/call-for-demos/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:OPP023-abstract_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260625
 DTEND;VALUE=DATE:20260626
 SUMMARY:[ISMAR] Abstract deadline (AoE) — ISMAR 2026 Posters
@@ -741,7 +529,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP023-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260630
 DTEND;VALUE=DATE:20260701
 SUMMARY:[ISMAR] Paper deadline (AoE) — ISMAR 2026 Posters
@@ -754,7 +542,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP023-notification_date@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260730
 DTEND;VALUE=DATE:20260731
 SUMMARY:[ISMAR] Notification — ISMAR 2026 Posters
@@ -767,7 +555,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP023-camera_ready_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260805
 DTEND;VALUE=DATE:20260806
 SUMMARY:[ISMAR] Camera-ready (AoE) — ISMAR 2026 Posters
@@ -780,7 +568,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP023-conference_start@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261006
 SUMMARY:[ISMAR] Conference start — ISMAR 2026 Posters
@@ -793,7 +581,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP025-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:[IMWUT] Paper deadline (AoE) — IMWUT New Submissions (2026-11-0
@@ -807,7 +595,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP032-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:[ISF] Paper deadline — ISF SI: From Adoption to Impact (ICT & A
@@ -821,7 +609,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP033-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20270115
 DTEND;VALUE=DATE:20270116
 SUMMARY:[ISF] Paper deadline — ISF SI: Humans in the Loop in AI-Driven 
@@ -835,7 +623,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP034-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260830
 DTEND;VALUE=DATE:20260831
 SUMMARY:[ISF] Paper deadline — ISF SI: AI\, Affective Computing and Vid
@@ -849,7 +637,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP035-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20260831
 DTEND;VALUE=DATE:20260901
 SUMMARY:[EM] Paper deadline — EM Topical Collection: Contemporary Resea
@@ -863,7 +651,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP036-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:[EM] Paper deadline — EM TC: Critical Perspectives on Digital P
@@ -877,7 +665,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:OPP037-paper_deadline@submission-dashboard
-DTSTAMP:20260615T025345Z
+DTSTAMP:20260622T025451Z
 DTSTART;VALUE=DATE:20270930
 DTEND;VALUE=DATE:20271001
 SUMMARY:[FIN] Paper deadline — FIN SI: Agentic Narrative Finance (Multi
