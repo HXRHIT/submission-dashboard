@@ -1,6 +1,6 @@
-# 📬 Weekly Submission Digest — 2026-07-13
+# 📬 Weekly Submission Digest — 2026-07-20
 
-요약: ERROR 0 · urgent 9 · 30일 이내 마감 4 · watchlist 도래 7 · AI 제안 대기 40행
+요약: ERROR 0 · urgent 9 · 30일 이내 마감 1 · watchlist 도래 7 · AI 제안 대기 40행
 
 ## 🔥 이번 주 작업 큐 (urgent)
 - [ ] [watchlist] W001: next_check_date(2026-06-12) 도래 — 공식 페이지 재확인 필요
@@ -16,10 +16,7 @@
 ## 🗓 30일 이내 마감
 | D-day | 날짜 | 종류 | venue | track | TZ | 검증 | CFP |
 |---|---|---|---|---|---|---|---|
-| D-2 | 2026-07-15 | paper | RecSys | RecSys 2026 Demos | AoE | verified_official | https://recsys.acm.org/recsys26/call/ |
-| D-3 | 2026-07-16 | paper | British HCI | British HCI 2026 Short Papers | AoE | verified_official | https://www.britchi.uk/authors/shorts/ |
-| D-4 | 2026-07-17 | paper | OzCHI | OzCHI 2026 Workshops | AoE | verified_official | https://www.ozchi.org/2026/workshop-proposals |
-| D-22 | 2026-08-04 | paper | OzCHI | OzCHI 2026 Late-Breaking Work | AoE | verified_official | https://www.ozchi.org/2026/papers |
+| D-15 | 2026-08-04 | paper | OzCHI | OzCHI 2026 Late-Breaking Work | AoE | verified_official | https://www.ozchi.org/2026/papers |
 
 ## 👀 Watchlist 확인 도래
 - [ ] W001 (V006, CFP released) — https://mobilehci.acm.org/2026/ — LBW 마감 TBD ~June 2026 — 즉시 재확인 필요. 모바일 UX 1순위 트랙.
@@ -34,4 +31,4 @@
 - opportunities.csv: 23행 → 대시보드 'AI 제안 검토' 탭에서 확인
 - watchlist.csv: 17행 → 대시보드 'AI 제안 검토' 탭에서 확인
 
-_normal 경고 44건 / backlog 26건 — `python scripts/validate_data.py`로 전체 확인._
+_normal 경고 44건 / backlog 23건 — `python scripts/validate_data.py`로 전체 확인._
