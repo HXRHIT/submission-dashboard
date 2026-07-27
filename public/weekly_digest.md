@@ -1,4 +1,4 @@
-# 📬 Weekly Submission Digest — 2026-07-20
+# 📬 Weekly Submission Digest — 2026-07-27
 
 요약: ERROR 0 · urgent 9 · 30일 이내 마감 1 · watchlist 도래 7 · AI 제안 대기 40행
 
@@ -16,7 +16,7 @@
 ## 🗓 30일 이내 마감
 | D-day | 날짜 | 종류 | venue | track | TZ | 검증 | CFP |
 |---|---|---|---|---|---|---|---|
-| D-15 | 2026-08-04 | paper | OzCHI | OzCHI 2026 Late-Breaking Work | AoE | verified_official | https://www.ozchi.org/2026/papers |
+| D-8 | 2026-08-04 | paper | OzCHI | OzCHI 2026 Late-Breaking Work | AoE | verified_official | https://www.ozchi.org/2026/papers |
 
 ## 👀 Watchlist 확인 도래
 - [ ] W001 (V006, CFP released) — https://mobilehci.acm.org/2026/ — LBW 마감 TBD ~June 2026 — 즉시 재확인 필요. 모바일 UX 1순위 트랙.
