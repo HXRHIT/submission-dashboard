@@ -1,4 +1,4 @@
-# 📬 Weekly Submission Digest — 2026-08-17
+# 📬 Weekly Submission Digest — 2026-08-24
 
 요약: ERROR 0 · urgent 12 · 30일 이내 마감 3 · watchlist 도래 10 · AI 제안 대기 55행
 
@@ -19,9 +19,9 @@
 ## 🗓 30일 이내 마감
 | D-day | 날짜 | 종류 | venue | track | TZ | 검증 | CFP |
 |---|---|---|---|---|---|---|---|
-| D-13 | 2026-08-30 | paper | ISF | ISF SI: AI, Affective Computing and Video Analytics |  | verified_official | https://link.springer.com/journal/10796 |
-| D-14 | 2026-08-31 | paper | EM | EM Topical Collection: Contemporary Research in Fintech |  | verified_official | https://link.springer.com/journal/12525 |
-| D-24 | 2026-09-10 | paper | CHI | CHI 2027 Papers | AoE | verified_official | https://chi2027.acm.org/authors/papers/ |
+| D-6 | 2026-08-30 | paper | ISF | ISF SI: AI, Affective Computing and Video Analytics |  | verified_official | https://link.springer.com/journal/10796 |
+| D-7 | 2026-08-31 | paper | EM | EM Topical Collection: Contemporary Research in Fintech |  | verified_official | https://link.springer.com/journal/12525 |
+| D-17 | 2026-09-10 | paper | CHI | CHI 2027 Papers | AoE | verified_official | https://chi2027.acm.org/authors/papers/ |
 
 ## 👀 Watchlist 확인 도래
 - [ ] W001 (V006, CFP released) — https://mobilehci.acm.org/2026/ — LBW 마감 TBD ~June 2026 — 즉시 재확인 필요. 모바일 UX 1순위 트랙.
@@ -39,4 +39,4 @@
 - opportunities.csv: 37행 → 대시보드 'AI 제안 검토' 탭에서 확인
 - watchlist.csv: 18행 → 대시보드 'AI 제안 검토' 탭에서 확인
 
-_normal 경고 182건 / backlog 22건 — `python scripts/validate_data.py`로 전체 확인._
+_normal 경고 187건 / backlog 22건 — `python scripts/validate_data.py`로 전체 확인._
