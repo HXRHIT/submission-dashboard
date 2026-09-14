@@ -1,6 +1,6 @@
-# 📬 Weekly Submission Digest — 2026-09-07
+# 📬 Weekly Submission Digest — 2026-09-14
 
-요약: ERROR 0 · urgent 13 · 30일 이내 마감 1 · watchlist 도래 11 · AI 제안 대기 55행
+요약: ERROR 0 · urgent 13 · 30일 이내 마감 0 · watchlist 도래 11 · AI 제안 대기 55행
 
 ## 🔥 이번 주 작업 큐 (urgent)
 - [ ] [watchlist] W001: next_check_date(2026-06-12) 도래 — 공식 페이지 재확인 필요
@@ -18,9 +18,7 @@
 - [ ] [opportunities] OPP012: needs_verification
 
 ## 🗓 30일 이내 마감
-| D-day | 날짜 | 종류 | venue | track | TZ | 검증 | CFP |
-|---|---|---|---|---|---|---|---|
-| D-3 | 2026-09-10 | paper | CHI | CHI 2027 Papers | AoE | verified_official | https://chi2027.acm.org/authors/papers/ |
+- 없음
 
 ## 👀 Watchlist 확인 도래
 - [ ] W001 (V006, CFP released) — https://mobilehci.acm.org/2026/ — LBW 마감 TBD ~June 2026 — 즉시 재확인 필요. 모바일 UX 1순위 트랙.
@@ -39,4 +37,4 @@
 - opportunities.csv: 37행 → 대시보드 'AI 제안 검토' 탭에서 확인
 - watchlist.csv: 18행 → 대시보드 'AI 제안 검토' 탭에서 확인
 
-_normal 경고 188건 / backlog 20건 — `python scripts/validate_data.py`로 전체 확인._
+_normal 경고 191건 / backlog 20건 — `python scripts/validate_data.py`로 전체 확인._
