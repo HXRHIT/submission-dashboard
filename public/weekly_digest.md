@@ -1,9 +1,10 @@
-# 📬 Weekly Submission Digest — 2026-09-14
+# 📬 Weekly Submission Digest — 2026-09-21
 
-요약: ERROR 0 · urgent 13 · 30일 이내 마감 0 · watchlist 도래 11 · AI 제안 대기 55행
+요약: ERROR 0 · urgent 14 · 30일 이내 마감 0 · watchlist 도래 12 · AI 제안 대기 55행
 
 ## 🔥 이번 주 작업 큐 (urgent)
 - [ ] [watchlist] W001: next_check_date(2026-06-12) 도래 — 공식 페이지 재확인 필요
+- [ ] [watchlist] W002: next_check_date(2026-09-15) 도래 — 공식 페이지 재확인 필요
 - [ ] [watchlist] W005: next_check_date(2026-08-01) 도래 — 공식 페이지 재확인 필요
 - [ ] [watchlist] W007: next_check_date(2026-06-20) 도래 — 공식 페이지 재확인 필요
 - [ ] [watchlist] W008: next_check_date(2026-08-01) 도래 — 공식 페이지 재확인 필요
@@ -22,6 +23,7 @@
 
 ## 👀 Watchlist 확인 도래
 - [ ] W001 (V006, CFP released) — https://mobilehci.acm.org/2026/ — LBW 마감 TBD ~June 2026 — 즉시 재확인 필요. 모바일 UX 1순위 트랙.
+- [ ] W002 (V001, CFP not released) — https://chi2027.acm.org/ — CHI 2027 LBW/Posters/Demos/Workshops 마감 미공개(예년: 11월~1월).
 - [ ] W005 (V011, CFP not released) — https://www.hci.international/ — HCII 2027은 2026 학회(7월 말) 이후 발표 예상. Helsinki 설은 2차 출처 — 미확인.
 - [ ] W007 (V015, CFP released) — https://www.humancomputation.com/2026/ — Posters/Demos·DC·CrowdCamp 마감 Coming soon.
 - [ ] W008 (V005, CFP released) — https://iui.acm.org/2027/ — 마감일 Coming soon — 8월 재확인.
@@ -37,4 +39,4 @@
 - opportunities.csv: 37행 → 대시보드 'AI 제안 검토' 탭에서 확인
 - watchlist.csv: 18행 → 대시보드 'AI 제안 검토' 탭에서 확인
 
-_normal 경고 191건 / backlog 20건 — `python scripts/validate_data.py`로 전체 확인._
+_normal 경고 194건 / backlog 20건 — `python scripts/validate_data.py`로 전체 확인._
