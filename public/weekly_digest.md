@@ -1,4 +1,4 @@
-# 📬 Weekly Submission Digest — 2026-09-21
+# 📬 Weekly Submission Digest — 2026-09-28
 
 요약: ERROR 0 · urgent 14 · 30일 이내 마감 0 · watchlist 도래 12 · AI 제안 대기 55행
 
