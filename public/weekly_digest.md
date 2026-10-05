@@ -1,10 +1,11 @@
-# 📬 Weekly Submission Digest — 2026-09-28
+# 📬 Weekly Submission Digest — 2026-10-05
 
-요약: ERROR 0 · urgent 14 · 30일 이내 마감 0 · watchlist 도래 12 · AI 제안 대기 55행
+요약: ERROR 0 · urgent 15 · 30일 이내 마감 1 · watchlist 도래 13 · AI 제안 대기 55행
 
 ## 🔥 이번 주 작업 큐 (urgent)
 - [ ] [watchlist] W001: next_check_date(2026-06-12) 도래 — 공식 페이지 재확인 필요
 - [ ] [watchlist] W002: next_check_date(2026-09-15) 도래 — 공식 페이지 재확인 필요
+- [ ] [watchlist] W003: next_check_date(2026-10-01) 도래 — 공식 페이지 재확인 필요
 - [ ] [watchlist] W005: next_check_date(2026-08-01) 도래 — 공식 페이지 재확인 필요
 - [ ] [watchlist] W007: next_check_date(2026-06-20) 도래 — 공식 페이지 재확인 필요
 - [ ] [watchlist] W008: next_check_date(2026-08-01) 도래 — 공식 페이지 재확인 필요
@@ -19,11 +20,14 @@
 - [ ] [opportunities] OPP012: needs_verification
 
 ## 🗓 30일 이내 마감
-- 없음
+| D-day | 날짜 | 종류 | venue | track | TZ | 검증 | CFP |
+|---|---|---|---|---|---|---|---|
+| D-27 | 2026-11-01 | paper | IMWUT | IMWUT New Submissions (2026-11-01 cycle) | AoE | verified_official | https://dl.acm.org/journal/imwut/how-to-submit |
 
 ## 👀 Watchlist 확인 도래
 - [ ] W001 (V006, CFP released) — https://mobilehci.acm.org/2026/ — LBW 마감 TBD ~June 2026 — 즉시 재확인 필요. 모바일 UX 1순위 트랙.
 - [ ] W002 (V001, CFP not released) — https://chi2027.acm.org/ — CHI 2027 LBW/Posters/Demos/Workshops 마감 미공개(예년: 11월~1월).
+- [ ] W003 (V003, CFP not released) — https://dis.acm.org/2026/ — DIS 2027 사이트 미개설(dis.acm.org/2027 예상). 예년 abstract ~1월 초.
 - [ ] W005 (V011, CFP not released) — https://www.hci.international/ — HCII 2027은 2026 학회(7월 말) 이후 발표 예상. Helsinki 설은 2차 출처 — 미확인.
 - [ ] W007 (V015, CFP released) — https://www.humancomputation.com/2026/ — Posters/Demos·DC·CrowdCamp 마감 Coming soon.
 - [ ] W008 (V005, CFP released) — https://iui.acm.org/2027/ — 마감일 Coming soon — 8월 재확인.
