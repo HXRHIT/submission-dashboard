@@ -69,6 +69,19 @@ def apply_theme(mode: str) -> None:
             --shadow: {shadow};
         }}
         .stApp {{ background: var(--app-bg); color: var(--text); }}
+        header[data-testid="stHeader"], [data-testid="stHeader"], .stAppHeader {{
+            background: var(--app-bg) !important;
+            background-color: var(--app-bg) !important;
+            border-bottom: none !important;
+            box-shadow: none !important;
+        }}
+        [data-testid="stDecoration"] {{
+            display: none !important;
+        }}
+        [data-testid="stToolbar"] * {{
+            color: var(--text) !important;
+            fill: var(--text) !important;
+        }}
         .block-container {{
             padding-top: 1.4rem;
             padding-bottom: 2rem;
