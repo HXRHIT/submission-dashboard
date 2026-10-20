@@ -1,216 +1,406 @@
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//submission-dashboard//export_calendar//KO
-CALSCALE:GREGORIAN
-METHOD:PUBLISH
-X-WR-CALNAME:Submission Deadlines
-X-WR-TIMEZONE:Asia/Seoul
-REFRESH-INTERVAL;VALUE=DURATION:P1D
-X-PUBLISHED-TTL:P1D
-BEGIN:VEVENT
-UID:OPP001-paper_deadline@submission-dashboard
-DTSTAMP:20261019T023313Z
-DTSTART;VALUE=DATE:20260910
-DTEND;VALUE=DATE:20260911
-SUMMARY:[CHI] Paper deadline (AoE) — CHI 2027 Papers
-DESCRIPTION:Track: CHI 2027 Papers | Type: full paper | Status: upcoming 
- | CFP: https://chi2027.acm.org/authors/papers/ | Deadline source: https:
- //chi2027.acm.org/authors/papers/ | Verification: verified_official
-URL:https://chi2027.acm.org/authors/papers/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP001-notification_date@submission-dashboard
-DTSTAMP:20261019T023313Z
-DTSTART;VALUE=DATE:20261217
-DTEND;VALUE=DATE:20261218
-SUMMARY:[CHI] Notification — CHI 2027 Papers
-DESCRIPTION:Track: CHI 2027 Papers | Type: full paper | Status: upcoming 
- | CFP: https://chi2027.acm.org/authors/papers/ | Deadline source: https:
- //chi2027.acm.org/authors/papers/ | Verification: verified_official
-URL:https://chi2027.acm.org/authors/papers/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP001-conference_start@submission-dashboard
-DTSTAMP:20261019T023313Z
-DTSTART;VALUE=DATE:20270510
-DTEND;VALUE=DATE:20270511
-SUMMARY:[CHI] Conference start — CHI 2027 Papers
-DESCRIPTION:Track: CHI 2027 Papers | Type: full paper | Status: upcoming 
- | CFP: https://chi2027.acm.org/authors/papers/ | Deadline source: https:
- //chi2027.acm.org/authors/papers/ | Verification: verified_official
-URL:https://chi2027.acm.org/authors/papers/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP011-conference_start@submission-dashboard
-DTSTAMP:20261019T023313Z
-DTSTART;VALUE=DATE:20270208
-DTEND;VALUE=DATE:20270209
-SUMMARY:[IUI] Conference start — IUI 2027 Papers
-DESCRIPTION:Track: IUI 2027 Papers | Type: full paper | Status: upcoming 
- | CFP: https://iui.acm.org/2027/call-for-papers/ | Deadline source: http
- s://iui.acm.org/2027/call-for-papers/ | Verification: needs_verification
-URL:https://iui.acm.org/2027/call-for-papers/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP012-conference_start@submission-dashboard
-DTSTAMP:20261019T023313Z
-DTSTART;VALUE=DATE:20260831
-DTEND;VALUE=DATE:20260901
-SUMMARY:[MobileHCI] Conference start — MobileHCI 2026 Late-Breaking Wor
- k
-DESCRIPTION:Track: MobileHCI 2026 Late-Breaking Work | Type: late-breakin
- g work | Status: upcoming | CFP: https://mobilehci.acm.org/2026/submit/l
- bw-posters.html | Deadline source: https://mobilehci.acm.org/2026/submit
- /lbw-posters.html | Verification: needs_verification
-URL:https://mobilehci.acm.org/2026/submit/lbw-posters.html
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP018-paper_deadline@submission-dashboard
-DTSTAMP:20261019T023313Z
-DTSTART;VALUE=DATE:20270201
-DTEND;VALUE=DATE:20270202
-SUMMARY:[INTERACT] Paper deadline (unknown) — INTERACT 2027 Full Papers
-DESCRIPTION:Track: INTERACT 2027 Full Papers | Type: full paper | Status:
-  upcoming | CFP: https://interact2027.org/calls/ | Deadline source: http
- s://interact2027.org/ | Verification: verified_official
-URL:https://interact2027.org/calls/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP018-notification_date@submission-dashboard
-DTSTAMP:20261019T023313Z
-DTSTART;VALUE=DATE:20270308
-DTEND;VALUE=DATE:20270309
-SUMMARY:[INTERACT] Notification — INTERACT 2027 Full Papers
-DESCRIPTION:Track: INTERACT 2027 Full Papers | Type: full paper | Status:
-  upcoming | CFP: https://interact2027.org/calls/ | Deadline source: http
- s://interact2027.org/ | Verification: verified_official
-URL:https://interact2027.org/calls/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP018-camera_ready_deadline@submission-dashboard
-DTSTAMP:20261019T023313Z
-DTSTART;VALUE=DATE:20270607
-DTEND;VALUE=DATE:20270608
-SUMMARY:[INTERACT] Camera-ready (unknown) — INTERACT 2027 Full Papers
-DESCRIPTION:Track: INTERACT 2027 Full Papers | Type: full paper | Status:
-  upcoming | CFP: https://interact2027.org/calls/ | Deadline source: http
- s://interact2027.org/ | Verification: verified_official
-URL:https://interact2027.org/calls/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP018-conference_start@submission-dashboard
-DTSTAMP:20261019T023313Z
-DTSTART;VALUE=DATE:20270823
-DTEND;VALUE=DATE:20270824
-SUMMARY:[INTERACT] Conference start — INTERACT 2027 Full Papers
-DESCRIPTION:Track: INTERACT 2027 Full Papers | Type: full paper | Status:
-  upcoming | CFP: https://interact2027.org/calls/ | Deadline source: http
- s://interact2027.org/ | Verification: verified_official
-URL:https://interact2027.org/calls/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP019-paper_deadline@submission-dashboard
-DTSTAMP:20261019T023313Z
-DTSTART;VALUE=DATE:20270503
-DTEND;VALUE=DATE:20270504
-SUMMARY:[INTERACT] Paper deadline (unknown) — INTERACT 2027 Short Paper
- s & Other Tracks
-DESCRIPTION:Track: INTERACT 2027 Short Papers & Other Tracks | Type: shor
- t paper | Status: upcoming | CFP: https://interact2027.org/calls/ | Dead
- line source: https://interact2027.org/ | Verification: verified_official
-URL:https://interact2027.org/calls/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP019-conference_start@submission-dashboard
-DTSTAMP:20261019T023313Z
-DTSTART;VALUE=DATE:20270823
-DTEND;VALUE=DATE:20270824
-SUMMARY:[INTERACT] Conference start — INTERACT 2027 Short Papers & Othe
- r Tracks
-DESCRIPTION:Track: INTERACT 2027 Short Papers & Other Tracks | Type: shor
- t paper | Status: upcoming | CFP: https://interact2027.org/calls/ | Dead
- line source: https://interact2027.org/ | Verification: verified_official
-URL:https://interact2027.org/calls/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP025-paper_deadline@submission-dashboard
-DTSTAMP:20261019T023313Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:[IMWUT] Paper deadline (AoE) — IMWUT New Submissions (2026-11-0
- 1 cycle)
-DESCRIPTION:Track: IMWUT New Submissions (2026-11-01 cycle) | Type: journ
- al article | Status: open | CFP: https://dl.acm.org/journal/imwut/how-to
- -submit | Deadline source: https://dl.acm.org/journal/imwut/how-to-submi
- t | Verification: verified_official
-URL:https://dl.acm.org/journal/imwut/how-to-submit
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP032-paper_deadline@submission-dashboard
-DTSTAMP:20261019T023313Z
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261205
-SUMMARY:[ISF] Paper deadline — ISF SI: From Adoption to Impact (ICT & A
- I)
-DESCRIPTION:Track: ISF SI: From Adoption to Impact (ICT & AI) | Type: spe
- cial issue | Status: open | CFP: https://link.springer.com/journal/10796
-  | Deadline source: https://link.springer.com/journal/10796 | Verificati
- on: verified_official
-URL:https://link.springer.com/journal/10796
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP033-paper_deadline@submission-dashboard
-DTSTAMP:20261019T023313Z
-DTSTART;VALUE=DATE:20270115
-DTEND;VALUE=DATE:20270116
-SUMMARY:[ISF] Paper deadline — ISF SI: Humans in the Loop in AI-Driven 
- Information Security
-DESCRIPTION:Track: ISF SI: Humans in the Loop in AI-Driven Information Se
- curity | Type: special issue | Status: open | CFP: https://link.springer
- .com/journal/10796 | Deadline source: https://link.springer.com/journal/
- 10796 | Verification: verified_official
-URL:https://link.springer.com/journal/10796
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP036-paper_deadline@submission-dashboard
-DTSTAMP:20261019T023313Z
-DTSTART;VALUE=DATE:20261201
-DTEND;VALUE=DATE:20261202
-SUMMARY:[EM] Paper deadline — EM TC: Critical Perspectives on Digital P
- latform Ecosystems
-DESCRIPTION:Track: EM TC: Critical Perspectives on Digital Platform Ecosy
- stems | Type: special issue | Status: open | CFP: https://link.springer.
- com/journal/12525 | Deadline source: https://link.springer.com/journal/1
- 2525 | Verification: verified_official
-URL:https://link.springer.com/journal/12525
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:OPP037-paper_deadline@submission-dashboard
-DTSTAMP:20261019T023313Z
-DTSTART;VALUE=DATE:20270930
-DTEND;VALUE=DATE:20271001
-SUMMARY:[FIN] Paper deadline — FIN SI: Agentic Narrative Finance (Multi
- modal AI & Markets)
-DESCRIPTION:Track: FIN SI: Agentic Narrative Finance (Multimodal AI & Mar
- kets) | Type: special issue | Status: open | CFP: https://link.springer.
- com/journal/40854 | Deadline source: https://link.springer.com/journal/4
- 0854 | Verification: verified_official
-URL:https://link.springer.com/journal/40854
-TRANSP:TRANSPARENT
-END:VEVENT
-END:VCALENDAR
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//submission-dashboard//export_calendar//KO
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Submission Deadlines
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:OPP001-paper_deadline@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:[CHI] Paper deadline (AoE) — CHI 2027 Papers
+DESCRIPTION:Track: CHI 2027 Papers | Type: full paper | Status: upcoming 
+ | CFP: https://chi2027.acm.org/authors/papers/ | Deadline source: https:
+ //chi2027.acm.org/authors/papers/ | Verification: verified_official
+URL:https://chi2027.acm.org/authors/papers/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP001-notification_date@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:[CHI] Notification — CHI 2027 Papers
+DESCRIPTION:Track: CHI 2027 Papers | Type: full paper | Status: upcoming 
+ | CFP: https://chi2027.acm.org/authors/papers/ | Deadline source: https:
+ //chi2027.acm.org/authors/papers/ | Verification: verified_official
+URL:https://chi2027.acm.org/authors/papers/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP001-conference_start@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270510
+DTEND;VALUE=DATE:20270511
+SUMMARY:[CHI] Conference start — CHI 2027 Papers
+DESCRIPTION:Track: CHI 2027 Papers | Type: full paper | Status: upcoming 
+ | CFP: https://chi2027.acm.org/authors/papers/ | Deadline source: https:
+ //chi2027.acm.org/authors/papers/ | Verification: verified_official
+URL:https://chi2027.acm.org/authors/papers/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP011-conference_start@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270209
+SUMMARY:[IUI] Conference start — IUI 2027 Papers
+DESCRIPTION:Track: IUI 2027 Papers | Type: full paper | Status: upcoming 
+ | CFP: https://iui.acm.org/2027/call-for-papers/ | Deadline source: http
+ s://iui.acm.org/2027/call-for-papers/ | Verification: needs_verification
+URL:https://iui.acm.org/2027/call-for-papers/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP012-conference_start@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+SUMMARY:[MobileHCI] Conference start — MobileHCI 2026 Late-Breaking Wor
+ k
+DESCRIPTION:Track: MobileHCI 2026 Late-Breaking Work | Type: late-breakin
+ g work | Status: upcoming | CFP: https://mobilehci.acm.org/2026/submit/l
+ bw-posters.html | Deadline source: https://mobilehci.acm.org/2026/submit
+ /lbw-posters.html | Verification: needs_verification
+URL:https://mobilehci.acm.org/2026/submit/lbw-posters.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP018-paper_deadline@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:[INTERACT] Paper deadline (unknown) — INTERACT 2027 Full Papers
+DESCRIPTION:Track: INTERACT 2027 Full Papers | Type: full paper | Status:
+  upcoming | CFP: https://interact2027.org/calls/ | Deadline source: http
+ s://interact2027.org/ | Verification: verified_official
+URL:https://interact2027.org/calls/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP018-notification_date@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270309
+SUMMARY:[INTERACT] Notification — INTERACT 2027 Full Papers
+DESCRIPTION:Track: INTERACT 2027 Full Papers | Type: full paper | Status:
+  upcoming | CFP: https://interact2027.org/calls/ | Deadline source: http
+ s://interact2027.org/ | Verification: verified_official
+URL:https://interact2027.org/calls/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP018-camera_ready_deadline@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270607
+DTEND;VALUE=DATE:20270608
+SUMMARY:[INTERACT] Camera-ready (unknown) — INTERACT 2027 Full Papers
+DESCRIPTION:Track: INTERACT 2027 Full Papers | Type: full paper | Status:
+  upcoming | CFP: https://interact2027.org/calls/ | Deadline source: http
+ s://interact2027.org/ | Verification: verified_official
+URL:https://interact2027.org/calls/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP018-conference_start@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270823
+DTEND;VALUE=DATE:20270824
+SUMMARY:[INTERACT] Conference start — INTERACT 2027 Full Papers
+DESCRIPTION:Track: INTERACT 2027 Full Papers | Type: full paper | Status:
+  upcoming | CFP: https://interact2027.org/calls/ | Deadline source: http
+ s://interact2027.org/ | Verification: verified_official
+URL:https://interact2027.org/calls/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP019-paper_deadline@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270504
+SUMMARY:[INTERACT] Paper deadline (unknown) — INTERACT 2027 Short Paper
+ s & Other Tracks
+DESCRIPTION:Track: INTERACT 2027 Short Papers & Other Tracks | Type: shor
+ t paper | Status: upcoming | CFP: https://interact2027.org/calls/ | Dead
+ line source: https://interact2027.org/ | Verification: verified_official
+URL:https://interact2027.org/calls/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP019-conference_start@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270823
+DTEND;VALUE=DATE:20270824
+SUMMARY:[INTERACT] Conference start — INTERACT 2027 Short Papers & Othe
+ r Tracks
+DESCRIPTION:Track: INTERACT 2027 Short Papers & Other Tracks | Type: shor
+ t paper | Status: upcoming | CFP: https://interact2027.org/calls/ | Dead
+ line source: https://interact2027.org/ | Verification: verified_official
+URL:https://interact2027.org/calls/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP025-paper_deadline@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[IMWUT] Paper deadline (AoE) — IMWUT New Submissions (2026-11-0
+ 1 cycle)
+DESCRIPTION:Track: IMWUT New Submissions (2026-11-01 cycle) | Type: journ
+ al article | Status: open | CFP: https://dl.acm.org/journal/imwut/how-to
+ -submit | Deadline source: https://dl.acm.org/journal/imwut/how-to-submi
+ t | Verification: verified_official
+URL:https://dl.acm.org/journal/imwut/how-to-submit
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP032-paper_deadline@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:[ISF] Paper deadline — ISF SI: From Adoption to Impact (ICT & A
+ I)
+DESCRIPTION:Track: ISF SI: From Adoption to Impact (ICT & AI) | Type: spe
+ cial issue | Status: open | CFP: https://link.springer.com/journal/10796
+  | Deadline source: https://link.springer.com/journal/10796 | Verificati
+ on: verified_official
+URL:https://link.springer.com/journal/10796
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP033-paper_deadline@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:[ISF] Paper deadline — ISF SI: Humans in the Loop in AI-Driven 
+ Information Security
+DESCRIPTION:Track: ISF SI: Humans in the Loop in AI-Driven Information Se
+ curity | Type: special issue | Status: open | CFP: https://link.springer
+ .com/journal/10796 | Deadline source: https://link.springer.com/journal/
+ 10796 | Verification: verified_official
+URL:https://link.springer.com/journal/10796
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP036-paper_deadline@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[EM] Paper deadline — EM TC: Critical Perspectives on Digital P
+ latform Ecosystems
+DESCRIPTION:Track: EM TC: Critical Perspectives on Digital Platform Ecosy
+ stems | Type: special issue | Status: open | CFP: https://link.springer.
+ com/journal/12525 | Deadline source: https://link.springer.com/journal/1
+ 2525 | Verification: verified_official
+URL:https://link.springer.com/journal/12525
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP037-paper_deadline@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270930
+DTEND;VALUE=DATE:20271001
+SUMMARY:[FIN] Paper deadline — FIN SI: Agentic Narrative Finance (Multi
+ modal AI & Markets)
+DESCRIPTION:Track: FIN SI: Agentic Narrative Finance (Multimodal AI & Mar
+ kets) | Type: special issue | Status: open | CFP: https://link.springer.
+ com/journal/40854 | Deadline source: https://link.springer.com/journal/4
+ 0854 | Verification: verified_official
+URL:https://link.springer.com/journal/40854
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP041-paper_deadline@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:[CHI] Paper deadline (AoE) — CHI 2027 Late-Breaking Work
+DESCRIPTION:Track: CHI 2027 Late-Breaking Work | Type: late-breaking work
+  | Status: upcoming | CFP: https://chi2027.acm.org/authors/posters/ | De
+ adline source: https://chi2027.acm.org/authors/posters/ | Verification: 
+ verified_official
+URL:https://chi2027.acm.org/authors/posters/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP041-notification_date@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:[CHI] Notification — CHI 2027 Late-Breaking Work
+DESCRIPTION:Track: CHI 2027 Late-Breaking Work | Type: late-breaking work
+  | Status: upcoming | CFP: https://chi2027.acm.org/authors/posters/ | De
+ adline source: https://chi2027.acm.org/authors/posters/ | Verification: 
+ verified_official
+URL:https://chi2027.acm.org/authors/posters/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP041-camera_ready_deadline@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270304
+DTEND;VALUE=DATE:20270305
+SUMMARY:[CHI] Camera-ready (AoE) — CHI 2027 Late-Breaking Work
+DESCRIPTION:Track: CHI 2027 Late-Breaking Work | Type: late-breaking work
+  | Status: upcoming | CFP: https://chi2027.acm.org/authors/posters/ | De
+ adline source: https://chi2027.acm.org/authors/posters/ | Verification: 
+ verified_official
+URL:https://chi2027.acm.org/authors/posters/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP041-conference_start@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270510
+DTEND;VALUE=DATE:20270511
+SUMMARY:[CHI] Conference start — CHI 2027 Late-Breaking Work
+DESCRIPTION:Track: CHI 2027 Late-Breaking Work | Type: late-breaking work
+  | Status: upcoming | CFP: https://chi2027.acm.org/authors/posters/ | De
+ adline source: https://chi2027.acm.org/authors/posters/ | Verification: 
+ verified_official
+URL:https://chi2027.acm.org/authors/posters/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP042-paper_deadline@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:[CHI] Paper deadline (AoE) — CHI 2027 Case Studies
+DESCRIPTION:Track: CHI 2027 Case Studies | Type: case study | Status: upc
+ oming | CFP: https://chi2027.acm.org/authors/case-studies/ | Deadline so
+ urce: https://chi2027.acm.org/authors/case-studies/ | Verification: veri
+ fied_official
+URL:https://chi2027.acm.org/authors/case-studies/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP042-notification_date@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:[CHI] Notification — CHI 2027 Case Studies
+DESCRIPTION:Track: CHI 2027 Case Studies | Type: case study | Status: upc
+ oming | CFP: https://chi2027.acm.org/authors/case-studies/ | Deadline so
+ urce: https://chi2027.acm.org/authors/case-studies/ | Verification: veri
+ fied_official
+URL:https://chi2027.acm.org/authors/case-studies/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP042-camera_ready_deadline@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270304
+DTEND;VALUE=DATE:20270305
+SUMMARY:[CHI] Camera-ready (AoE) — CHI 2027 Case Studies
+DESCRIPTION:Track: CHI 2027 Case Studies | Type: case study | Status: upc
+ oming | CFP: https://chi2027.acm.org/authors/case-studies/ | Deadline so
+ urce: https://chi2027.acm.org/authors/case-studies/ | Verification: veri
+ fied_official
+URL:https://chi2027.acm.org/authors/case-studies/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP042-conference_start@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270510
+DTEND;VALUE=DATE:20270511
+SUMMARY:[CHI] Conference start — CHI 2027 Case Studies
+DESCRIPTION:Track: CHI 2027 Case Studies | Type: case study | Status: upc
+ oming | CFP: https://chi2027.acm.org/authors/case-studies/ | Deadline so
+ urce: https://chi2027.acm.org/authors/case-studies/ | Verification: veri
+ fied_official
+URL:https://chi2027.acm.org/authors/case-studies/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP043-paper_deadline@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[HCI Korea] Paper deadline (KST) — HCI KOREA 2027 일반/학술
+  논문
+DESCRIPTION:Track: HCI KOREA 2027 일반/학술 논문 | Type: full paper
+  | Status: upcoming | CFP: https://hcikorea.org/ | Deadline source: http
+ s://hcikorea.org/ | Verification: verified_official
+URL:https://hcikorea.org/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP043-notification_date@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+SUMMARY:[HCI Korea] Notification — HCI KOREA 2027 일반/학술 논문
+DESCRIPTION:Track: HCI KOREA 2027 일반/학술 논문 | Type: full paper
+  | Status: upcoming | CFP: https://hcikorea.org/ | Deadline source: http
+ s://hcikorea.org/ | Verification: verified_official
+URL:https://hcikorea.org/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP043-conference_start@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:[HCI Korea] Conference start — HCI KOREA 2027 일반/학술 논
+ 문
+DESCRIPTION:Track: HCI KOREA 2027 일반/학술 논문 | Type: full paper
+  | Status: upcoming | CFP: https://hcikorea.org/ | Deadline source: http
+ s://hcikorea.org/ | Verification: verified_official
+URL:https://hcikorea.org/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP044-paper_deadline@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270206
+SUMMARY:[DIS] Paper deadline (AoE) — DIS 2027 Papers & Pictorials
+DESCRIPTION:Track: DIS 2027 Papers & Pictorials | Type: full paper | Stat
+ us: upcoming | CFP: https://dis.acm.org/ | Deadline source: https://dis.
+ acm.org/ | Verification: verified_official
+URL:https://dis.acm.org/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP044-conference_start@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270705
+DTEND;VALUE=DATE:20270706
+SUMMARY:[DIS] Conference start — DIS 2027 Papers & Pictorials
+DESCRIPTION:Track: DIS 2027 Papers & Pictorials | Type: full paper | Stat
+ us: upcoming | CFP: https://dis.acm.org/ | Deadline source: https://dis.
+ acm.org/ | Verification: verified_official
+URL:https://dis.acm.org/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP045-paper_deadline@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270226
+DTEND;VALUE=DATE:20270227
+SUMMARY:[CUI] Paper deadline (AoE) — CUI 2027 Full & Short Papers
+DESCRIPTION:Track: CUI 2027 Full & Short Papers | Type: full paper | Stat
+ us: upcoming | CFP: https://cui.acm.org/ | Deadline source: https://cui.
+ acm.org/ | Verification: verified_official
+URL:https://cui.acm.org/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:OPP045-conference_start@submission-dashboard
+DTSTAMP:20261020T002911Z
+DTSTART;VALUE=DATE:20270715
+DTEND;VALUE=DATE:20270716
+SUMMARY:[CUI] Conference start — CUI 2027 Full & Short Papers
+DESCRIPTION:Track: CUI 2027 Full & Short Papers | Type: full paper | Stat
+ us: upcoming | CFP: https://cui.acm.org/ | Deadline source: https://cui.
+ acm.org/ | Verification: verified_official
+URL:https://cui.acm.org/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

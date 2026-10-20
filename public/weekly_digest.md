@@ -1,4 +1,4 @@
-# 📬 Weekly Submission Digest — 2026-10-19
+# 📬 Weekly Submission Digest — 2026-10-20
 
 요약: ERROR 0 · urgent 16 · 30일 이내 마감 1 · watchlist 도래 14 · AI 제안 대기 55행
 
@@ -23,7 +23,7 @@
 ## 🗓 30일 이내 마감
 | D-day | 날짜 | 종류 | venue | track | TZ | 검증 | CFP |
 |---|---|---|---|---|---|---|---|
-| D-13 | 2026-11-01 | paper | IMWUT | IMWUT New Submissions (2026-11-01 cycle) | AoE | verified_official | https://dl.acm.org/journal/imwut/how-to-submit |
+| D-12 | 2026-11-01 | paper | IMWUT | IMWUT New Submissions (2026-11-01 cycle) | AoE | verified_official | https://dl.acm.org/journal/imwut/how-to-submit |
 
 ## 👀 Watchlist 확인 도래
 - [ ] W001 (V006, CFP released) — https://mobilehci.acm.org/2026/ — LBW 마감 TBD ~June 2026 — 즉시 재확인 필요. 모바일 UX 1순위 트랙.
