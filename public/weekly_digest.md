@@ -1,6 +1,6 @@
-# 📬 Weekly Submission Digest — 2026-10-20
+# 📬 Weekly Submission Digest — 2026-10-26
 
-요약: ERROR 0 · urgent 16 · 30일 이내 마감 1 · watchlist 도래 14 · AI 제안 대기 55행
+요약: ERROR 0 · urgent 16 · 30일 이내 마감 1 · watchlist 도래 14 · AI 제안 대기 56행
 
 ## 🔥 이번 주 작업 큐 (urgent)
 - [ ] [watchlist] W001: next_check_date(2026-06-12) 도래 — 공식 페이지 재확인 필요
@@ -23,7 +23,7 @@
 ## 🗓 30일 이내 마감
 | D-day | 날짜 | 종류 | venue | track | TZ | 검증 | CFP |
 |---|---|---|---|---|---|---|---|
-| D-12 | 2026-11-01 | paper | IMWUT | IMWUT New Submissions (2026-11-01 cycle) | AoE | verified_official | https://dl.acm.org/journal/imwut/how-to-submit |
+| D-6 | 2026-11-01 | paper | IMWUT | IMWUT New Submissions (2026-11-01 cycle) | AoE | verified_official | https://dl.acm.org/journal/imwut/how-to-submit |
 
 ## 👀 Watchlist 확인 도래
 - [ ] W001 (V006, CFP released) — https://mobilehci.acm.org/2026/ — LBW 마감 TBD ~June 2026 — 즉시 재확인 필요. 모바일 UX 1순위 트랙.
@@ -42,7 +42,7 @@
 - [ ] W018 (V009, closed) — https://sites.uwasa.fi/nordichi2026/ — NordiCHI 2026 전 트랙 마감. 차기 회차 추적. 채택된 워크숍의 paper 모집은 별도로 열릴 수 있음 — 7월 확인.
 
 ## 🤖 AI 제안 대기 (proposed_updates)
-- opportunities.csv: 37행 → 대시보드 'AI 제안 검토' 탭에서 확인
+- opportunities.csv: 38행 → 대시보드 'AI 제안 검토' 탭에서 확인
 - watchlist.csv: 18행 → 대시보드 'AI 제안 검토' 탭에서 확인
 
 _normal 경고 195건 / backlog 20건 — `python scripts/validate_data.py`로 전체 확인._
