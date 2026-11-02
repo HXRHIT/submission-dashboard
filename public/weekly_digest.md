@@ -1,11 +1,12 @@
-# 📬 Weekly Submission Digest — 2026-10-26
+# 📬 Weekly Submission Digest — 2026-11-02
 
-요약: ERROR 0 · urgent 16 · 30일 이내 마감 1 · watchlist 도래 14 · AI 제안 대기 56행
+요약: ERROR 0 · urgent 17 · 30일 이내 마감 2 · watchlist 도래 15 · AI 제안 대기 56행
 
 ## 🔥 이번 주 작업 큐 (urgent)
 - [ ] [watchlist] W001: next_check_date(2026-06-12) 도래 — 공식 페이지 재확인 필요
 - [ ] [watchlist] W002: next_check_date(2026-09-15) 도래 — 공식 페이지 재확인 필요
 - [ ] [watchlist] W003: next_check_date(2026-10-01) 도래 — 공식 페이지 재확인 필요
+- [ ] [watchlist] W004: next_check_date(2026-11-01) 도래 — 공식 페이지 재확인 필요
 - [ ] [watchlist] W005: next_check_date(2026-08-01) 도래 — 공식 페이지 재확인 필요
 - [ ] [watchlist] W006: next_check_date(2026-10-15) 도래 — 공식 페이지 재확인 필요
 - [ ] [watchlist] W007: next_check_date(2026-06-20) 도래 — 공식 페이지 재확인 필요
@@ -23,12 +24,14 @@
 ## 🗓 30일 이내 마감
 | D-day | 날짜 | 종류 | venue | track | TZ | 검증 | CFP |
 |---|---|---|---|---|---|---|---|
-| D-6 | 2026-11-01 | paper | IMWUT | IMWUT New Submissions (2026-11-01 cycle) | AoE | verified_official | https://dl.acm.org/journal/imwut/how-to-submit |
+| D-29 | 2026-12-01 | paper | EM | EM TC: Critical Perspectives on Digital Platform Ecosystems |  | verified_official | https://link.springer.com/journal/12525 |
+| D-29 | 2026-12-01 | paper | HCI Korea | HCI KOREA 2027 일반/학술 논문 | KST | verified_official | https://hcikorea.org/ |
 
 ## 👀 Watchlist 확인 도래
 - [ ] W001 (V006, CFP released) — https://mobilehci.acm.org/2026/ — LBW 마감 TBD ~June 2026 — 즉시 재확인 필요. 모바일 UX 1순위 트랙.
 - [ ] W002 (V001, CFP not released) — https://chi2027.acm.org/ — CHI 2027 LBW/Posters/Demos/Workshops 마감 미공개(예년: 11월~1월).
 - [ ] W003 (V003, CFP not released) — https://dis.acm.org/2026/ — DIS 2027 사이트 미개설(dis.acm.org/2027 예상). 예년 abstract ~1월 초.
+- [ ] W004 (V012, CFP not released) — https://cui.acm.org/2026/ — CUI 2027 미발표. 예년 full paper ~2월 말/3월 초.
 - [ ] W005 (V011, CFP not released) — https://www.hci.international/ — HCII 2027은 2026 학회(7월 말) 이후 발표 예상. Helsinki 설은 2차 출처 — 미확인.
 - [ ] W006 (V014, CFP not released) — https://facctconference.org/2026/cfp.html — FAccT 2027 Porto, 2027-06-21~24 설은 검색결과 기반 — 공식 페이지 미확인. 예년 마감 ~1월 중순.
 - [ ] W007 (V015, CFP released) — https://www.humancomputation.com/2026/ — Posters/Demos·DC·CrowdCamp 마감 Coming soon.
@@ -45,4 +48,4 @@
 - opportunities.csv: 38행 → 대시보드 'AI 제안 검토' 탭에서 확인
 - watchlist.csv: 18행 → 대시보드 'AI 제안 검토' 탭에서 확인
 
-_normal 경고 195건 / backlog 20건 — `python scripts/validate_data.py`로 전체 확인._
+_normal 경고 195건 / backlog 19건 — `python scripts/validate_data.py`로 전체 확인._
