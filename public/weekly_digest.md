@@ -1,6 +1,6 @@
-# 📬 Weekly Submission Digest — 2026-11-02
+# 📬 Weekly Submission Digest — 2026-11-09
 
-요약: ERROR 0 · urgent 17 · 30일 이내 마감 2 · watchlist 도래 15 · AI 제안 대기 56행
+요약: ERROR 0 · urgent 17 · 30일 이내 마감 3 · watchlist 도래 15 · AI 제안 대기 56행
 
 ## 🔥 이번 주 작업 큐 (urgent)
 - [ ] [watchlist] W001: next_check_date(2026-06-12) 도래 — 공식 페이지 재확인 필요
@@ -24,8 +24,9 @@
 ## 🗓 30일 이내 마감
 | D-day | 날짜 | 종류 | venue | track | TZ | 검증 | CFP |
 |---|---|---|---|---|---|---|---|
-| D-29 | 2026-12-01 | paper | EM | EM TC: Critical Perspectives on Digital Platform Ecosystems |  | verified_official | https://link.springer.com/journal/12525 |
-| D-29 | 2026-12-01 | paper | HCI Korea | HCI KOREA 2027 일반/학술 논문 | KST | verified_official | https://hcikorea.org/ |
+| D-22 | 2026-12-01 | paper | EM | EM TC: Critical Perspectives on Digital Platform Ecosystems |  | verified_official | https://link.springer.com/journal/12525 |
+| D-22 | 2026-12-01 | paper | HCI Korea | HCI KOREA 2027 일반/학술 논문 | KST | verified_official | https://hcikorea.org/ |
+| D-25 | 2026-12-04 | paper | ISF | ISF SI: From Adoption to Impact (ICT & AI) |  | verified_official | https://link.springer.com/journal/10796 |
 
 ## 👀 Watchlist 확인 도래
 - [ ] W001 (V006, CFP released) — https://mobilehci.acm.org/2026/ — LBW 마감 TBD ~June 2026 — 즉시 재확인 필요. 모바일 UX 1순위 트랙.
@@ -48,4 +49,4 @@
 - opportunities.csv: 38행 → 대시보드 'AI 제안 검토' 탭에서 확인
 - watchlist.csv: 18행 → 대시보드 'AI 제안 검토' 탭에서 확인
 
-_normal 경고 195건 / backlog 19건 — `python scripts/validate_data.py`로 전체 확인._
+_normal 경고 196건 / backlog 19건 — `python scripts/validate_data.py`로 전체 확인._
